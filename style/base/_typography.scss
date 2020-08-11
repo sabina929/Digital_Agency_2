@@ -1,0 +1,45 @@
+body{
+    font-family: $font-family-1;
+    color: $main-text-color;
+    font-size: $paragraph-font-size-1;
+}
+
+.heading-primary{
+    font-family: $font-family-1;
+    font-size: $heading-1-font-size;
+    line-height: 65px;
+    font-weight: 700;
+    color: $main-blue;
+}
+.heading-secondary{
+    font-family: $font-family-1;
+    font-size: $heading-2-font-size;
+    font-weight: 700;
+    color: $main-blue;
+}
+.heading-tertiary{
+    font-family: $font-family-1;
+    font-size: $heading-3-font-size;
+    font-weight: 700;
+    color: $main-text-color;
+}
+
+.paragraph{
+    font-family: $font-family-2;
+    font-size: $paragraph-font-size-1;
+    color: $main-text-color;
+    // line-height: 30px;
+    
+    &--regular{
+        font-weight: 400;
+    }
+
+    &--medium{
+        font-weight: 500;
+    }
+
+    &--bold{
+        font-weight: 700;
+    }
+}
+

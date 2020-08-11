@@ -1,0 +1,43 @@
+main{
+        width: 100vw;
+        height: auto;   
+        background-color: $secondary-background;
+        margin: 40px auto 0 auto;
+        // margin-top: 80px;
+        padding: 0 140px;
+        @include center;
+
+        // border: $border-check-1;
+
+    section#hero{
+        width: 100%;
+        height: auto; 
+        margin: 0px 80px 60px 80px;
+        padding: 160px 0;
+        // border: $border-check-2;
+        h1{
+            width: 38%;
+            margin-bottom: 40px;
+        }
+        p{
+            line-height: 30px;
+            width: 38%;
+            margin-bottom: 60px;
+        }
+
+        a{
+            text-decoration: none;
+            color: $primary-background;
+            background-color: $main-magenta;
+            font-weight: 700;
+            font-family: $font-family-2;
+            font-size: $paragraph-font-size-2;
+            height: 39px;
+            width: 140px;
+            padding: 12px 24px;
+            border-bottom-left-radius: 25px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+        }
+    }
+}

@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FCFFFF;
+  overflow-x: hidden;
+}
+
+.hero-pattern {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: auto;
+  z-index: 9999;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  color: #13063D;
+  font-size: 20px;
+}
+
+.heading-primary {
+  font-family: "Playfair Display", serif;
+  font-size: 54px;
+  line-height: 65px;
+  font-weight: 700;
+  color: #007AFF;
+}
+
+.heading-secondary {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #007AFF;
+}
+
+.heading-tertiary {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #13063D;
+}
+
+.paragraph {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #13063D;
+}
+
+.paragraph--regular {
+  font-weight: 400;
+}
+
+.paragraph--medium {
+  font-weight: 500;
+}
+
+.paragraph--bold {
+  font-weight: 700;
+}
+
+/* HEADER FOR BIG SCREENS */
+header.big-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #FCFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100vw;
+  height: 80px;
+  z-index: 999;
+  padding: 20px 80px;
+}
+
+header.big-screen .logo {
+  -ms-flex-preferred-size: 120px;
+      flex-basis: 120px;
+}
+
+header.big-screen .logo a {
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header.big-screen .logo a img {
+  width: 120px;
+  height: auto;
+  cursor: pointer;
+}
+
+header.big-screen .menu-btn {
+  margin-right: 640px;
+}
+
+header.big-screen .menu-btn button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #13063D;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+/* HEADER FOR SMALL SCREENS */
+header.small-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100vw;
+  height: 80px;
+  z-index: 999;
+  padding: 22px 48px;
+}
+
+/* MEDIA QUERIES STARTS */
+/* 1160px */
+@media only screen and (max-width: 1160px) {
+  header.big-screen {
+    display: none;
+  }
+  header.small-screen {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+/* 1161px */
+@media only screen and (min-width: 1161px) {
+  header.big-screen {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header.small-screen {
+    display: none;
+  }
+}
+
+/* MEDIA QUERIES ENDS */
+/* FOOTER FOR BIG SCREENS */
+footer.big-screen {
+  width: 100vw;
+  height: auto;
+  margin: 0 auto;
+  padding: 0px 0;
+}
+
+/* FOOTER FOR SMALL SCREENS */
+footer.small-screen {
+  width: 100vw;
+  height: auto;
+  margin: 0 auto;
+  padding: 0px 0;
+}
+
+/* MEDIA QUERIES STARTS */
+/* 1160px */
+@media only screen and (max-width: 1160px) {
+  footer.big-screen {
+    display: none;
+  }
+  footer.small-screen {
+    display: block;
+  }
+}
+
+/* 1161px */
+@media only screen and (min-width: 1161px) {
+  footer.big-screen {
+    display: block;
+  }
+  footer.small-screen {
+    display: none;
+  }
+}
+
+/* MEDIA QUERIES ENDS */
+main {
+  width: 100vw;
+  height: auto;
+  background-color: #FCFFFF;
+  margin: 40px auto 0 auto;
+  padding: 0 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section#hero {
+  width: 100%;
+  height: auto;
+  margin: 0px 80px 60px 80px;
+  padding: 160px 0;
+}
+
+main section#hero h1 {
+  width: 38%;
+  margin-bottom: 40px;
+}
+
+main section#hero p {
+  line-height: 30px;
+  width: 38%;
+  margin-bottom: 60px;
+}
+
+main section#hero a {
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #FF5A6D;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  height: 39px;
+  width: 140px;
+  padding: 12px 24px;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+main {
+  width: 100vw;
+  height: auto;
+  background-color: #FCFFFF;
+  margin: 80px auto 0 auto;
+  padding: 0 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section#about {
+  width: 100%;
+  height: auto;
+  margin: 20px 80px 60px 80px;
+  padding: 160px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section#about h2 {
+  width: 56%;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+main section#about p {
+  line-height: 30px;
+  width: 56%;
+  text-align: center;
+}
+
+main section#about p:not(:last-child) {
+  margin-bottom: 40px;
+}
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,41 @@
+// COLORS
+$main-blue: #007AFF;
+$darker-blue: #3913B8;
+$main-cyan:#76F7FF;
+$main-magenta: #FF5A6D;
+
+$main-text-color:#13063D;
+
+$primary-background: #FFFFFF;
+$secondary-background: #FCFFFF;
+
+
+// BUTTONS
+$button-border-radius: 20px;
+$button-box-shadow-green: 0px 12px 24px -6px rgba(7, 197, 127, 0.48);
+
+// CARDS
+$card-box-shadow: 0px 25px 50px rgba(57, 19, 184, 0.05);
+$card-hovered-box-shadow: 1px 42px 42px -20px rgba(99, 102, 146, 0.06);
+
+// FONTS
+$heading-1-font-size: 54px;
+$heading-2-font-size: 42px;
+$heading-3-font-size: 22px;
+
+$paragraph-font-size-1: 20px;
+$paragraph-font-size-2: 16px;
+$paragraph-font-size-3: 14px;
+
+// $font-family-1: 'Roboto', sans-serif;
+// $font-family-2: 'Montserrat', sans-serif;
+
+$font-family-1: 'Playfair Display', serif;
+$font-family-2: 'Montserrat', sans-serif;
+
+
+
+// FOR DEBUGGING (TEMP. VARIABLES)
+$border-check-1: 1px solid red;
+$border-check-2: 1px solid orange;
+$border-check-3: 1px solid blue;
