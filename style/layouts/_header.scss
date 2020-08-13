@@ -37,8 +37,11 @@ header.big-screen {
         
     }
     .menu-btn{
-        margin-right: 640px;
+        width: 80px;
+        margin-right: 624px;
+       
         button{
+            width: 80px;
             border: none;
             outline: none;
             background-color: transparent;
@@ -46,7 +49,28 @@ header.big-screen {
             font-size: $paragraph-font-size-2;
             color: $main-text-color;
             font-weight: 400;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
             cursor: pointer;
+
+            .menu-icon{
+                // border: $border-check-2;
+                width: 20px;
+                height: 20px;
+                display: grid;
+                grid-template-columns: 4px 4px 4px;
+                grid-template-rows: 4px 4px 4px;
+                grid-gap: 4px;
+                align-items: center;
+                justify-content: center;
+                div{
+                    width: 4px;
+                height: 4px;
+                background-color: $darker-blue;
+                }
+            }
         }
     } 
     
