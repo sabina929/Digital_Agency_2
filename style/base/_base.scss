@@ -12,6 +12,15 @@ body{
     background-color: $secondary-background;
     overflow-x: hidden;
 }
+::-moz-selection {
+    background-color: $darker-blue;
+    color: $secondary-background;
+  }
+  
+  ::selection {
+    background-color: $darker-blue;
+    color: $secondary-background;
+  }
 
 .hero-pattern{
     position: absolute;
@@ -21,4 +30,5 @@ body{
     height: calc(100vh + 1px);
     width: auto;
     z-index: 9999;
+    transform: rotateZ(180deg);
 }

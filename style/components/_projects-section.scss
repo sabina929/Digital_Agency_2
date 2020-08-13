@@ -73,7 +73,7 @@ main{
             }
             &:nth-child(4){
                 div.project__info{
-                    background-color: darken($main-cyan, 30%);
+                    background-color: darken($main-cyan, 32%);
 
                 }    
             }
@@ -125,9 +125,9 @@ main{
                 opacity: 1;
                 transform: translateY(0px);
 
-                &:hover   {
-                    transform: translate(4px, 0px);
-                }
+                // &:hover   {
+                    animation: moveToRight 1.4s ease 0s infinite;
+                // }
             }
         }
         }

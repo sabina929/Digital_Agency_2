@@ -38,6 +38,14 @@ main{
             border-bottom-left-radius: 25px;
             border-top-left-radius: 25px;
             border-top-right-radius: 25px;
+            border-bottom-right-radius: 0px;
+            transition: all .2s ease-in;            
+            &:hover{
+                border-bottom-left-radius: 25px;
+                border-top-left-radius: 0px;
+                border-top-right-radius: 25px;
+                border-bottom-right-radius: 25px;
+            }
         }
     }
 }
