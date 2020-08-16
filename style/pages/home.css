@@ -51,13 +51,13 @@ body {
 }
 
 body {
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
   color: #13063D;
   font-size: 20px;
 }
 
 .heading-primary {
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 54px;
   line-height: 65px;
   font-weight: 700;
@@ -65,14 +65,14 @@ body {
 }
 
 .heading-secondary {
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 42px;
   font-weight: 700;
   color: #007AFF;
 }
 
 .heading-tertiary {
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 22px;
   font-weight: 700;
   color: #13063D;
@@ -98,7 +98,7 @@ body {
 
 /* HEADER FOR BIG SCREENS */
 header.big-screen {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -142,7 +142,6 @@ header.big-screen .logo a img {
 
 header.big-screen .menu-btn {
   width: 80px;
-  margin-right: 624px;
 }
 
 header.big-screen .menu-btn button {
@@ -307,18 +306,33 @@ main {
 main section#hero {
   width: 100%;
   height: auto;
-  margin: 0px 80px 60px 80px;
+  margin: 60px 80px 0px 80px;
   padding: 160px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main section#hero h1 {
-  width: 38%;
+  width: 60%;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 main section#hero p {
   line-height: 30px;
-  width: 38%;
+  width: 50%;
+  text-align: center;
   margin-bottom: 60px;
 }
 
@@ -326,31 +340,42 @@ main section#hero a {
   text-decoration: none;
   color: #FFFFFF;
   background-color: #FF5A6D;
-  font-weight: 700;
+  font-weight: 500;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  height: 39px;
-  width: 140px;
-  padding: 12px 24px;
-  border-bottom-left-radius: 25px;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 0px;
+  height: 42px;
+  width: 200px;
+  padding: 18px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
 }
 
 main section#hero a:hover {
-  border-bottom-left-radius: 25px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
+  background-color: #3913B8;
+}
+
+main section#hero a img {
+  -webkit-animation: moveToRight 1.4s ease 0s infinite;
+          animation: moveToRight 1.4s ease 0s infinite;
 }
 
 main section#about {
   width: 100%;
   height: auto;
-  margin: 20px 80px 60px 80px;
+  margin: 0px 80px 60px 80px;
   padding: 160px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -426,12 +451,12 @@ main section#services .services-container {
 }
 
 main section#services .services-container article.service {
-  width: 460px;
+  width: 500px;
   height: 100%;
   -webkit-box-shadow: 0px 25px 50px rgba(57, 19, 184, 0.05);
           box-shadow: 0px 25px 50px rgba(57, 19, 184, 0.05);
   background-color: #FFFFFF;
-  padding: 30px;
+  padding: 0 30px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,13 +473,6 @@ main section#services .services-container article.service {
   position: relative;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
-}
-
-main section#services .services-container article.service:hover {
-  -webkit-transform: translateY(4px);
-          transform: translateY(4px);
-  -webkit-box-shadow: 1px 4px 4px 1px rgba(57, 19, 184, 0.05);
-          box-shadow: 1px 4px 4px 1px rgba(57, 19, 184, 0.05);
 }
 
 main section#services .services-container article.service img.service__pattern {
@@ -575,6 +593,8 @@ main section#projects .projects-container article.project {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
+  position: relative;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
@@ -615,7 +635,7 @@ main section#projects .projects-container article.project:nth-child(4) div.proje
 main section#projects .projects-container article.project div.project__info {
   padding: 36px 36px 50px 36px;
   width: 100%;
-  height: auto;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -629,7 +649,13 @@ main section#projects .projects-container article.project div.project__info {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  position: relative;
+  position: absolute;
+  top: 152%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 main section#projects .projects-container article.project div.project__info h3 {
@@ -672,6 +698,10 @@ main section#projects .projects-container article.project div.project__info a {
 main section#projects .projects-container article.project div.project__info a img.right-arrow {
   width: 47px;
   height: 17px;
+}
+
+main section#projects .projects-container article.project:hover div.project__info {
+  top: 50%;
 }
 
 main section#projects .projects-container article.project:hover div.project__info a {

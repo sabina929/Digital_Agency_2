@@ -35,6 +35,9 @@ main{
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
+            position: relative;
+
             &:not(:last-child){
                 margin-right: 40px;
             }
@@ -80,13 +83,16 @@ main{
             div.project__info{
                 padding: 36px 36px 50px 36px;
                 width: 100%;
-                height: auto;
+                height: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: flex-start;
-                position: relative;
-
+                position: absolute;
+                top:152%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                transition: all .3s ease;
                
 
                 h3{
@@ -105,8 +111,8 @@ main{
                 right: 30px;
                 width: 47px;
                 height: 17px;
-               opacity: 0;
-               transform: translateY(4px);
+                opacity: 0;
+                transform: translateY(4px);
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -120,7 +126,11 @@ main{
                 
             }
             }
-    
+
+            &:hover div.project__info {
+                top: 50%;
+            }
+
             &:hover div.project__info a{
                 opacity: 1;
                 transform: translateY(0px);

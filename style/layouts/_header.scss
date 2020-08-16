@@ -1,8 +1,8 @@
 
 /* HEADER FOR BIG SCREENS */
 header.big-screen {
-    // position: fixed;
-    position: absolute;
+    position: fixed;
+    // position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -38,7 +38,7 @@ header.big-screen {
     }
     .menu-btn{
         width: 80px;
-        margin-right: 624px;
+        // margin-right: 624px;
        
         button{
             width: 80px;

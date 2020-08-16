@@ -12,16 +12,22 @@ main{
     section#hero{
         width: 100%;
         height: auto; 
-        margin: 0px 80px 60px 80px;
+        margin: 60px 80px 0px 80px;
         padding: 160px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         // border: $border-check-2;
         h1{
-            width: 38%;
+            width: 60%;
             margin-bottom: 40px;
+            text-align: center;
         }
         p{
             line-height: 30px;
-            width: 38%;
+            width: 50%;
+            text-align: center;
             margin-bottom: 60px;
         }
 
@@ -29,22 +35,32 @@ main{
             text-decoration: none;
             color: $primary-background;
             background-color: $main-magenta;
-            font-weight: 700;
+            font-weight: 500;
             font-family: $font-family-2;
             font-size: $paragraph-font-size-2;
-            height: 39px;
-            width: 140px;
-            padding: 12px 24px;
-            border-bottom-left-radius: 25px;
-            border-top-left-radius: 25px;
-            border-top-right-radius: 25px;
-            border-bottom-right-radius: 0px;
-            transition: all .2s ease-in;            
+            height: 42px;
+            width: 200px;
+            padding: 18px 24px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            // border-bottom-left-radius: 25px;
+            // border-top-left-radius: 25px;
+            // border-top-right-radius: 25px;
+            // border-bottom-right-radius: 0px;
+            transition: all .2s ease-in;   
+            
             &:hover{
-                border-bottom-left-radius: 25px;
-                border-top-left-radius: 0px;
-                border-top-right-radius: 25px;
-                border-bottom-right-radius: 25px;
+                // border-bottom-left-radius: 25px;
+                // border-top-left-radius: 0px;
+                // border-top-right-radius: 25px;
+                // border-bottom-right-radius: 25px;
+                background-color: $darker-blue;
+            }
+
+            img{
+                animation: moveToRight 1.4s ease 0s infinite;
             }
         }
     }
