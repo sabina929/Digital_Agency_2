@@ -232,6 +232,7 @@ header.big-screen .logo a img {
 
 header.big-screen .menu-btn {
   width: 80px;
+  z-index: 99999;
 }
 
 header.big-screen .menu-btn button {
@@ -275,6 +276,49 @@ header.big-screen .menu-btn button .menu-icon {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+}
+
+header.big-screen .menu-btn button .menu-icon::before {
+  content: '';
+  position: absolute;
+  top: 75%;
+  left: 1%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg) scaleY(0);
+          transform: translate(-50%, -50%) rotate(-45deg) scaleY(0);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  width: 2px;
+  height: 28px;
+  background-color: #FF5A6D;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+header.big-screen .menu-btn button .menu-icon::after {
+  content: '';
+  position: absolute;
+  top: 73%;
+  left: 97%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg) scaleY(0);
+          transform: translate(-50%, -50%) rotate(45deg) scaleY(0);
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+  width: 2px;
+  height: 28px;
+  background-color: #FF5A6D;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+header.big-screen .menu-btn button .menu-icon.clicked::before {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg) scaleY(1);
+          transform: translate(-50%, -50%) rotate(-45deg) scaleY(1);
+}
+
+header.big-screen .menu-btn button .menu-icon.clicked::after {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg) scaleY(1);
+          transform: translate(-50%, -50%) rotate(45deg) scaleY(1);
 }
 
 header.big-screen .menu-btn button .menu-icon div {
@@ -285,11 +329,12 @@ header.big-screen .menu-btn button .menu-icon div {
 
 header.big-screen nav {
   position: fixed;
-  top: -640px;
-  left: 0;
-  right: 0;
+  top: 0px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -1200px);
+          transform: translate(-50%, -1200px);
   display: none;
-  height: 0vh;
+  height: 100vh;
   width: 100vw;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -298,24 +343,109 @@ header.big-screen nav {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #FFFFFF;
-  padding: 80px 48px 0 48px;
-  -webkit-transition: all .3s ease-out;
-  transition: all .3s ease-out;
-  z-index: 99999;
+  padding: 0px 48px 0 310px;
+  -webkit-transition: all .7s ease;
+  transition: all .7s ease;
 }
 
-header.big-screen nav.open {
+header.big-screen nav ul {
+  list-style: none;
+}
+
+header.big-screen nav ul.menu-items li {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
-  width: 100vw;
-  -webkit-animation: menuDown 0.5s cubic-bezier(0.23, 0.28, 0.34, 0.93) forwards;
-          animation: menuDown 0.5s cubic-bezier(0.23, 0.28, 0.34, 0.93) forwards;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header.big-screen nav ul.menu-items li:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+header.big-screen nav ul.menu-items li a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 54px;
+  color: #13063D;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+header.big-screen nav ul.menu-items li::before {
+  content: url("../../assets/images/right-arrow-blue.svg");
+  position: absolute;
+  top: 50%;
+  left: -60px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+header.big-screen nav ul.menu-items li:hover::before {
+  opacity: 1;
+}
+
+header.big-screen nav ul.menu-items li:hover a {
+  color: #007AFF;
+  margin-left: 60px;
+}
+
+header.big-screen nav ul.contact {
+  position: absolute;
+  bottom: 0%;
+  right: 0px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+header.big-screen nav ul.contact li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header.big-screen nav ul.contact li p {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  color: #13063D;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+header.big-screen nav ul.contact li a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  color: #3913B8;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 /* HEADER FOR SMALL SCREENS */

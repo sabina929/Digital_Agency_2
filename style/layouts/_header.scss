@@ -50,7 +50,8 @@ header.big-screen {
     .menu-btn{
         width: 80px;
         // margin-right: 624px;
-       
+        z-index: 99999;
+
         button{
             width: 80px;
             border: none;
@@ -76,10 +77,43 @@ header.big-screen {
                 grid-gap: 4px;
                 align-items: center;
                 justify-content: center;
+                position: relative;
+
+                &::before{
+                  content: '';
+                  position: absolute;
+                  top: 75%;
+                  left: 1%;
+                  transform: translate(-50%, -50%) rotate(-45deg) scaleY(0);
+                  transform-origin: 0 0;
+                  width: 2px;
+                  height: 28px;
+                  background-color: $main-magenta;
+                  transition: all .3s ease;
+                }
+                &::after{
+                  content: '';
+                  position: absolute;
+                  top: 73%;
+                  left: 97%;
+                  transform: translate(-50%, -50%) rotate(45deg) scaleY(0);
+                  transform-origin: 100% 0;
+                  width: 2px;
+                  height: 28px;
+                  background-color: $main-magenta;
+                  transition: all .3s ease;
+                }
+
+                &.clicked::before{
+                  transform: translate(-50%, -50%) rotate(-45deg) scaleY(1);
+                }
+                &.clicked::after{
+                  transform: translate(-50%, -50%) rotate(45deg) scaleY(1);
+                }
                 div{
                     width: 4px;
-                height: 4px;
-                background-color: $darker-blue;
+                    height: 4px;
+                    background-color: $darker-blue;
                 }
             }
         }
@@ -87,27 +121,109 @@ header.big-screen {
     
   nav{
     position: fixed;
-    top: -640px;
-    left: 0;
-    right: 0;
+    // top: -640px;
+    top: 0px;
+    left: 50%;
+    // right: 0;
+    transform: translate(-50%, -1200px);
     display: none;
-    height: 0vh;
+    // height: 0vh;
+    height: 100vh;
     width: 100vw;
     // display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     background-color: $primary-background;
-    padding:80px 48px 0 48px;
+    padding:0px 48px 0 310px;
     // padding:80px 0 0 0;
-    transition: all .3s ease-out;
-    z-index: 99999;
+    transition: all .7s ease;
+    // transition: all .7s cubic-bezier(0.24, 0.18, 0, 1.25);
+    // z-index: 99999;
 
-    &.open {
-        display: flex;
-        height: 100vh;
-        width: 100vw;
-        animation: menuDown .5s cubic-bezier(0.23, 0.28, 0.34, 0.93) forwards;
+    // &.open {
+        // display: flex;
+        // height: 100vh;
+        // width: 100vw;
+        // animation: menuDown .5s cubic-bezier(0.23, 0.28, 0.34, 0.93) forwards;
+        // top: 0px;
+        // transform: translate(-50%, 0px);
+      // }
+
+
+      ul {
+        list-style: none;
+
+        &.menu-items{
+          li{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            &:not(:last-child){
+              margin-bottom: 30px;
+            }
+            a{
+              text-decoration: none;
+              font-family: $font-family-1;
+              font-size: $heading-1-font-size;
+              color: $main-text-color;
+              transition: all .5s ease; 
+            }
+
+            &::before{
+              content: url('../../assets/images/right-arrow-blue.svg');
+              position: absolute;
+              top: 50%;
+              left: -60px;
+              transform: translate(-50%, -50%);
+              opacity: 0;
+              // display: none;
+              transition: all .5s ease; 
+            }
+            
+            &:hover::before{
+              // display: block;
+              opacity: 1;
+            }
+
+            &:hover a{
+              color: $main-blue;
+              margin-left: 60px;
+            }
+          }
+        }
+        &.contact{
+          position: absolute;
+          bottom: 0%;
+          right: 0px;
+          transform: translate(-50%, -50%);
+          li{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+
+           p{
+            font-family: $font-family-1;
+            font-size: 24px;
+            color: $main-text-color;
+            font-weight: 700;
+            margin-bottom: 10px;
+           }
+            a{
+              text-decoration: none;
+              font-family: $font-family-2;
+              font-size: 28px;
+              color: $darker-blue;
+              transition: all .5s ease; 
+            }
+
+         
+          }
+        }
       }
   }
 
