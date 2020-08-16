@@ -29,7 +29,7 @@ main{
             width: 230px;
             height: auto;
             box-shadow: $card-box-shadow;
-            background-color: $primary-background;
+            background-color: $secondary-background;
             padding: 30px;
             display: flex;
             flex-direction: column;
@@ -92,7 +92,7 @@ main{
                         // transition: all .3s ease;
 
                         &:hover {
-                           filter: hue-rotate(250deg) brightness(.4) saturate(1.8);
+                            filter: hue-rotate(264deg) brightness(.42) saturate(2);
                         }
 
                         img{

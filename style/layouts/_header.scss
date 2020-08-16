@@ -24,16 +24,26 @@ header.big-screen {
         // border: $border-check-2;        
         flex-basis: 120px;
 
-        a {
-            outline: none;
             display: flex;
-            
-            img {
-            width: 120px;
-            height: auto;
-            cursor: pointer;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            a {
+              width: 120px;
+              height: auto;
+              outline: none;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              cursor: pointer;
+                
+                img {
+                width: 120px;
+                height: auto;
+                }
             }
-        }
+        
         
     }
     .menu-btn{
