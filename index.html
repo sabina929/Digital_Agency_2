@@ -4,15 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/png" sizes="334x334" href="./assets/images/favicon.png" />
+
     <!-- FONTS -->
      <!-- Playfair Display & Montserrat -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500:700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- STYLE -->
     <link rel="stylesheet" href="./style/pages/home.css">
+
+    <!-- LOCOMOTIVE SCROLL -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js" integrity="sha256-p4OuLeAtmp2jz4BehPUj4k7TIllujbqDopoQKaSdsVo=" crossorigin="anonymous"></script>
+
+    
     <title>Wecreo</title>
 </head>
-<body>
+<body data-scroll-container>
 <!-- <img src="./assets/images/hero-pattern.png" alt="colorful pattern" class="hero-pattern"> -->
      <!-- HEADER FOR BIG SCREENS -->
    <header class="big-screen">
@@ -35,7 +44,7 @@
         </button>
         
     </div>
-    <nav style="display: none;">
+    <nav>
         <ul>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Services</a></li>
@@ -50,19 +59,19 @@
         </ul>
     </nav>        
 </header>
-<main>
-    <section id="hero">
+<main data-scroll-section>
+    <section id="hero" data-scroll data-scroll-speed="2">
         <h1 class="heading-primary">We’re a digital agency to bring your product to life</h1>
         <p class="paragraph paragraph--medium">We work closely with our clients to define, design and develop transformative user experiences.</p>
         <a href="#">Get in touch <img src="./assets/images/projects/right-arrow.svg" alt="right arrow."></a>
     </section>
-    <section id="about">
+    <section id="about" data-scroll data-scroll-speed="4">
         <h2 class="heading-secondary">About Us</h2>
         <p class="paragraph paragraph--medium">We are a group of talented people with an unique approach to projects and with the main goal of bringing real value to our customers. We create human-centered enterprise software that has the polished, snappy feel of the best consumer apps.</p>
         <p class="paragraph paragraph--medium">We’re a team of technologists, strategists, and creative problem solvers seeking to make a positive impact on your business and the world around us.</p>
 
     </section>
-    <section id="services">
+    <section id="services" data-scroll data-scroll-speed="4">
         <h2 class="heading-secondary">Services that we offer</h2>
         <div class="services-container">
             <article class="service">
@@ -100,7 +109,7 @@
         </div>
 
     </section>
-    <section id="projects">
+    <section id="projects" data-scroll data-scroll-speed="4">
         <h2 class="heading-secondary">Explore a few of our most impactful projects</h2>
         <div class="projects-container">
             <article class="project">
@@ -148,7 +157,7 @@
 
     </section>
 
-    <section id="team">
+    <section id="team" data-scroll data-scroll-speed="4">
         <h2 class="heading-secondary">Meet Our Team</h2>
         <div class="members-container">
             <article class="member">
@@ -247,7 +256,7 @@
    
 </main>
 
-<footer id="contact" class="big-screen">
+<footer id="contact" class="big-screen" data-scroll-section data-scroll data-scroll-speed="4">
     <article class="upper">
         <h2 class="heading-secondary">Let’s create an awesome project together!</h2>
         <p class="paragraph paragraph--medium">Get in touch with us to speak more about your project.</p>
@@ -285,5 +294,24 @@
         <p class="paragraph paragraph--regular">All rights reserved. Wecreo, 2020.</p>
     </article>
 </footer>
+
+<!-- ! locomotive-scroll v3.3.11 | MIT License | https://github.com/locomotivemtl/locomotive-scroll  -->
+<!--  START  -->
+<script>
+    (function () {
+  var scroll = new LocomotiveScroll({
+    el: document.querySelector("[data-scroll-container]"),
+    smooth: true,
+    smoothMobile: true,
+    // direction:"horizontal",
+    // inertia:1,
+    // repeat:true,
+    // offset: ["10%", 100]
+  });
+})();
+</script>
+
+<script src="./script.js"></script>
+<!--  END  -->
 </body>
 </html>
