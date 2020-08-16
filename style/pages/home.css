@@ -52,10 +52,6 @@ html.has-scroll-dragging {
   user-select: none;
 }
 
-.has-scroll-smooth body {
-  overflow: hidden;
-}
-
 body {
   background-color: #FCFFFF;
   overflow-x: hidden;
