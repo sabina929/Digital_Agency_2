@@ -28,12 +28,15 @@ function checkMenuIsOpened(){
 function openMenu(){
     isMenuOpened = true;
     dot1.style.display = "none"
+    // menuContainer.style.display = "flex"
+    // menuContainer.style.transform = "translate(-50%, 0px)"
     setTimeout(() => {
       dot2.style.display = "none"
-
+      menuContainer.style.clipPath = "circle(100% at 50% 0)"
+      
       setTimeout(() => {
         dot3.style.display = "none"
-
+        
         setTimeout(() => {
           dot4.style.display = "none"
 
@@ -49,26 +52,24 @@ function openMenu(){
                 setTimeout(() => {
                   dot8.style.display = "none"
 
-                  menuContainer.style.display = "flex"
-                  setTimeout(() => {
-                    menuContainer.style.transform = "translate(-50%, 0px)"
-                  }, 50)
-
+                  
                   setTimeout(() => {
                     dot9.style.display = "none"
                     
                     setTimeout(() => {
                       menuIcon.classList.add('clicked')
-                    }, 50)
+                      // setTimeout(() => {
+                      // }, 20)
+                    }, 20)
 
-                  }, 50)
-                }, 50)
-              }, 50)
-            }, 50)
-          }, 50)
-        }, 50)
-      }, 50)
-    }, 50)
+                  }, 20)
+                }, 20)
+              }, 20)
+            }, 20)
+          }, 20)
+        }, 20)
+      }, 20)
+    }, 20)
 
 
 
@@ -76,10 +77,11 @@ function openMenu(){
 }
 function closeMenu(){
     isMenuOpened = false;
-    menuContainer.style.transform = "translate(-50%, -1200px)"
+    menuContainer.style.clipPath = "circle(00% at 50% 0)"
     menuIcon.classList.remove('clicked')
     setTimeout(() => {
       dot9.style.display = "block"
+     
 
       setTimeout(() => {
         dot8.style.display = "block"
@@ -104,18 +106,22 @@ function closeMenu(){
 
                     setTimeout(() => {
                       dot1.style.display = "block"
-                    },50)
-                  },50)
-                },50)
-              },50)
-            },50)
-          },50)
-        },50)
-      },50)
+                      // setTimeout(() => {
+                      //    menuContainer.style.transform = "translate(-50%, -1200px)"
+                        //  setTimeout(() => {
+                        //   menuContainer.style.display = "none"
+                        // }, 20)
+                      // },1000)
+                    },20)
+                  },20)
+                },20)
+              },20)
+            },20)
+          },20)
+        },20)
+      },20)
     },100)
-    setTimeout(() => {
-      menuContainer.style.display = "none"
-    }, 800)
+    
 
   
 }
