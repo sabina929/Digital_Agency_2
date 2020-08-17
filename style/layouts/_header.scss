@@ -159,12 +159,32 @@ header.big-screen {
         list-style: none;
 
         &.menu-items{
+          // &.menu-items-appear {
+          //   li{
+          //     &:nth-child(1) {
+          //       animation: itemAppear .8s ease 0.1s forwards;
+          //     }
+          //     &:nth-child(2) {
+          //       animation: itemAppear .8s ease .3s forwards;
+          //     }
+          //     &:nth-child(3) {
+          //       animation: itemAppear .8s ease .5s forwards;
+          //     }
+          //     &:nth-child(4) {
+          //       animation: itemAppear .8s ease .7s forwards;
+          //     }
+          //   }
+          // }
           li{
             position: relative;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
+            
+            
+            transition: all 0.5s ease;
+
 
             &:not(:last-child){
               margin-bottom: 30px;
@@ -174,7 +194,10 @@ header.big-screen {
               font-family: $font-family-1;
               font-size: $heading-1-font-size;
               color: $main-text-color;
-              transition: all .5s ease; 
+              // transition: all .5s ease; 
+              clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+              transition: all .5s cubic-bezier(0.77,-0.01, 0.59, 0.87);
+              transform: translateY(40px);
             }
 
             &::before{
@@ -194,6 +217,7 @@ header.big-screen {
             }
 
             &:hover a{
+              transition: all .5s ease; 
               color: $main-blue;
               margin-left: 60px;
             }
@@ -216,6 +240,9 @@ header.big-screen {
             color: $main-text-color;
             font-weight: 700;
             margin-bottom: 10px;
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+            transition: all .5s cubic-bezier(0.77,-0.01, 0.59, 0.87);
+            transform: translateY(20px);
            }
             a{
               text-decoration: none;
@@ -223,6 +250,9 @@ header.big-screen {
               font-size: 28px;
               color: $darker-blue;
               transition: all .5s ease; 
+              clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+              transition: all .5s cubic-bezier(0.77,-0.01, 0.59, 0.87);
+              transform: translateY(20px);
             }
 
          
