@@ -42,7 +42,7 @@ function openMenu(){
     // menuContainer.style.transform = "translate(-50%, 0px)"
     setTimeout(() => {
       dot2.style.display = "none"
-      menuContainer.style.clipPath = "circle(100% at 50% 0)"
+      menuContainer.style.clipPath = "circle(200% at 50% 0)"
       
       setTimeout(() => {
         dot3.style.display = "none"
@@ -133,7 +133,7 @@ function closeMenu(){
               menuItemLink4.style.transform = "translateY(40px)"
               setTimeout(() => {
               dot9.style.display = "block"
-              menuContainer.style.clipPath = "circle(00% at 50% 0)"
+              menuContainer.style.clipPath = "circle(0% at 50% 0)"
             
 
               setTimeout(() => {
