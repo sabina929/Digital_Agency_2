@@ -39,7 +39,8 @@ body{
   ::-webkit-scrollbar {
     -webkit-transition: all 0.8s ease-in;
     transition: all 0.8s ease-in;
-    width: 10px;
+    // width: 10px;
+    width: 0px;
   }
   
   ::-webkit-scrollbar-track {

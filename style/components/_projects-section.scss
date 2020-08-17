@@ -10,6 +10,11 @@ main{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        @media only screen and (max-width: 1550px) {
+            margin: 0px 60px 80px 60px;
+        }
+
         h2{
             width: 40%;
             margin-bottom: 100px;
@@ -19,12 +24,24 @@ main{
     
     
         .projects-container{
-            display: flex;
-            flex-direction: row;
+            // width: 100%;
+            // display: flex;
+            // flex-direction: row;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            grid-gap: 60px;
             justify-content: center;
             align-items: center;
-            justify-content: center;
-            align-items: center;
+
+            @media only screen and (max-width: 1550px) {
+                grid-template-columns: 1fr 1fr;
+                
+            }
+            // @media only screen and (max-width: 1550px) {
+            //     flex-wrap: wrap;
+            //     justify-content: flex-start;
+            // }
         article.project{
             width: 300px;
             height: auto;
@@ -37,12 +54,16 @@ main{
             align-items: center;
             overflow: hidden;
             position: relative;
+            transition: all .3s ease;
 
-            &:not(:last-child){
-                margin-right: 60px;
+            // &:not(:last-child){
+            //     margin-right: 60px;
+            // }
+            @media only screen and (max-width: 1550px) {
+                width: 360px;
+                
             }
             
-            transition: all .3s ease;
     
             &:hover{
                 transform: translateY(4px);
