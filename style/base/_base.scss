@@ -36,7 +36,27 @@ body{
     color: $secondary-background;
   }
 
+  ::-webkit-scrollbar {
+    -webkit-transition: all 0.8s ease-in;
+    transition: all 0.8s ease-in;
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    -webkit-transition: all 0.8s ease-in;
+    transition: all 0.8s ease-in;
+    background: $secondary-background;
+    
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    -webkit-transition: all 0.8s ease-in;
+    transition: all 0.8s ease-in;
+    // border-radius: 10px;
+    background: rgba($darker-blue, .1);
 
+    
+  }
   
 /*! locomotive-scroll v3.3.11 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
 /* START */
