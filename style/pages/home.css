@@ -2518,13 +2518,6 @@ main section#team .members-container article.member {
   transition: all .3s ease;
 }
 
-main section#team .members-container article.member:hover {
-  -webkit-transform: translateY(4px);
-          transform: translateY(4px);
-  -webkit-box-shadow: 1px 4px 4px 1px rgba(57, 19, 184, 0.05);
-          box-shadow: 1px 4px 4px 1px rgba(57, 19, 184, 0.05);
-}
-
 main section#team .members-container article.member img.member__image {
   width: 112px;
   height: 112px;
