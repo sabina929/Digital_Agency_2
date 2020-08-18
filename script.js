@@ -194,6 +194,10 @@ function closeMenu(){
 
 
 menuItemLinks.forEach(menuItemLink => {
-  menuItemLink.addEventListener("click",closeMenu)
+  menuItemLink.addEventListener("click",()=>{
+    setTimeout(()=>{
+      closeMenu()
+    }, 500)
+  })
    
 });
