@@ -899,6 +899,7 @@ footer#contact.big-screen article.upper p {
     width: 100%;
     font-size: 18px;
     line-height: 28px;
+    font-weight: 400;
   }
 }
 
@@ -1592,6 +1593,7 @@ main section#about p:not(:last-child) {
     width: 100%;
     font-size: 18px;
     line-height: 28px;
+    font-weight: 400;
   }
 }
 
