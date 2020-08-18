@@ -186,6 +186,6 @@ menuItemLinks.forEach(menuItemLink => {
   menuItemLink.addEventListener("click", ()=>{
     setTimeout(()=>{
       closeMenu()
-    }, 50)
+    }, 500)
   });
 });
