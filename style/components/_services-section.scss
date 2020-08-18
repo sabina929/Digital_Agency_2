@@ -125,6 +125,7 @@ section#services{
         align-items: center;
         position: relative;
         transition: all .3s ease;
+        overflow: hidden;
 
         // &:hover{
         //     transform: translateY(4px);
@@ -164,11 +165,17 @@ section#services{
         // }
 
         img.service__pattern {
-            width: auto;
+            width: 168px;
             height: 100%;
             margin-right: 30px;
+            @media only screen and (max-width: 1250px) {
+                width: 160px;
+                height: 160px;
+            }
             @media only screen and (max-width: 550px) {
                 margin-right: 20px;
+                width: 140px;
+                height: 140px;
             }
             @media only screen and (max-width: 500px) {
                 width: 100%;

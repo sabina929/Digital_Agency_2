@@ -1811,6 +1811,7 @@ main section#services .services-container article.service {
   position: relative;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 1550px) {
@@ -1861,14 +1862,23 @@ main section#services .services-container article.service {
 }
 
 main section#services .services-container article.service img.service__pattern {
-  width: auto;
+  width: 168px;
   height: 100%;
   margin-right: 30px;
+}
+
+@media only screen and (max-width: 1250px) {
+  main section#services .services-container article.service img.service__pattern {
+    width: 160px;
+    height: 160px;
+  }
 }
 
 @media only screen and (max-width: 550px) {
   main section#services .services-container article.service img.service__pattern {
     margin-right: 20px;
+    width: 140px;
+    height: 140px;
   }
 }
 
