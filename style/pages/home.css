@@ -547,11 +547,11 @@ header.big-screen nav ul.menu-items li::before {
   }
 }
 
-header.big-screen nav ul.menu-items li:hover::before {
+header.big-screen nav ul.menu-items li.opened:hover::before {
   opacity: 1;
 }
 
-header.big-screen nav ul.menu-items li:hover a {
+header.big-screen nav ul.menu-items li.opened:hover a {
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   color: #007AFF;
@@ -559,7 +559,7 @@ header.big-screen nav ul.menu-items li:hover a {
 }
 
 @media only screen and (max-width: 1300px) {
-  header.big-screen nav ul.menu-items li:hover a {
+  header.big-screen nav ul.menu-items li.opened:hover a {
     -webkit-transition: all .4s ease;
     transition: all .4s ease;
     margin-left: 40px;
@@ -567,7 +567,7 @@ header.big-screen nav ul.menu-items li:hover a {
 }
 
 @media only screen and (max-width: 1000px) {
-  header.big-screen nav ul.menu-items li:hover a {
+  header.big-screen nav ul.menu-items li.opened:hover a {
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
     margin-left: 30px;

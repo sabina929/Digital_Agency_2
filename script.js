@@ -56,7 +56,11 @@ function openMenu(){
             setTimeout(() => {
               dot6.style.display = "none"
 
-       
+              // console.log(menuItemLink1.parentNode)
+              menuItemLink1.parentNode.classList.toggle('opened')
+              menuItemLink2.parentNode.classList.toggle('opened')
+              menuItemLink3.parentNode.classList.toggle('opened')
+              menuItemLink4.parentNode.classList.toggle('opened')
               setTimeout(() => {
                 dot7.style.display = "none"
                 menuItemLink1.style.clipPath = "polygon(0 0, 100% 0, 100% 100%, 0% 100%)"
@@ -110,59 +114,66 @@ function closeMenu(){
     isMenuOpened = false;
     // menuList.classList.remove("menu-items-appear");
     menuIcon.classList.remove('clicked')
+
+    menuItemLink1.parentNode.classList.remove('opened')
+    menuItemLink2.parentNode.classList.remove('opened')
+    menuItemLink3.parentNode.classList.remove('opened')
+    menuItemLink4.parentNode.classList.remove('opened')
     
-    menuContactParagraph.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)"
-    menuContactParagraph.style.transform = "translateY(20px)"
     setTimeout(() => {
-      menuContactLink.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)"
-      menuContactLink.style.transform = "translateY(20px)"
+      menuContactParagraph.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)"
+      menuContactParagraph.style.transform = "translateY(20px)"
       setTimeout(() => {
-        menuItemLink1.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)"
-        menuItemLink1.style.transform = "translateY(40px)"
+        menuContactLink.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)"
+        menuContactLink.style.transform = "translateY(20px)"
         setTimeout(() => {
-          menuItemLink2.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)"
-          menuItemLink2.style.transform = "translateY(40px)"
-
+          menuItemLink1.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)"
+          menuItemLink1.style.transform = "translateY(40px)"
           setTimeout(() => {
-            menuItemLink3.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)"
-            menuItemLink3.style.transform = "translateY(40px)"
-            setTimeout(() => {
-              menuItemLink4.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)"
-              menuItemLink4.style.transform = "translateY(40px)"
-              setTimeout(() => {
-              dot9.style.display = "block"
-              menuContainer.style.clipPath = "circle(0% at 50% 0)"
-            
+            menuItemLink2.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)"
+            menuItemLink2.style.transform = "translateY(40px)"
 
+            setTimeout(() => {
+              menuItemLink3.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)"
+              menuItemLink3.style.transform = "translateY(40px)"
               setTimeout(() => {
-                dot8.style.display = "block"
+                menuItemLink4.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)"
+                menuItemLink4.style.transform = "translateY(40px)"
+                setTimeout(() => {
+                dot9.style.display = "block"
+                menuContainer.style.clipPath = "circle(0% at 50% 0)"
+              
 
                 setTimeout(() => {
-                  dot7.style.display = "block"
+                  dot8.style.display = "block"
 
                   setTimeout(() => {
-                    dot6.style.display = "block"
+                    dot7.style.display = "block"
 
                     setTimeout(() => {
-                      dot5.style.display = "block"
+                      dot6.style.display = "block"
 
                       setTimeout(() => {
-                        dot4.style.display = "block"
+                        dot5.style.display = "block"
 
                         setTimeout(() => {
-                          dot3.style.display = "block"
+                          dot4.style.display = "block"
 
                           setTimeout(() => {
-                            dot2.style.display = "block"
+                            dot3.style.display = "block"
 
                             setTimeout(() => {
-                              dot1.style.display = "block"
-                              // setTimeout(() => {
-                              //    menuContainer.style.transform = "translate(-50%, -1200px)"
-                                //  setTimeout(() => {
-                                //   menuContainer.style.display = "none"
-                                // }, 20)
-                              // },1000)
+                              dot2.style.display = "block"
+
+                              setTimeout(() => {
+                                dot1.style.display = "block"
+                                // setTimeout(() => {
+                                //    menuContainer.style.transform = "translate(-50%, -1200px)"
+                                  //  setTimeout(() => {
+                                  //   menuContainer.style.display = "none"
+                                  // }, 20)
+                                // },1000)
+                              },20)
                             },20)
                           },20)
                         },20)
@@ -170,22 +181,19 @@ function closeMenu(){
                     },20)
                   },20)
                 },20)
-              },20)
-              },100)
+                },100)
+              },40)
             },40)
           },40)
         },40)
       },40)
-    },40)
+    },150)
 
   
 }
 
 
 menuItemLinks.forEach(menuItemLink => {
-  menuItemLink.addEventListener("click", ()=>{
-    setTimeout(()=>{
-      closeMenu()
-    }, 500)
-  });
+  menuItemLink.addEventListener("click",closeMenu)
+   
 });

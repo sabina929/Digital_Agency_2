@@ -261,12 +261,12 @@ header.big-screen {
               }
             }
             
-            &:hover::before{
+            &.opened:hover::before{
               // display: block;
               opacity: 1;
             }
 
-            &:hover a{
+            &.opened:hover a{
               transition: all .5s ease; 
               color: $main-blue;
               margin-left: 60px;
