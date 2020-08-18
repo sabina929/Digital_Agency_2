@@ -57,6 +57,10 @@ main{
                 line-height: 32px;
                 margin-bottom: 40px;
             }
+            @media only screen and (max-width: 320px) {
+                font-size: 25px;
+                line-height: 30px;
+            }
         }
        
     
@@ -129,12 +133,21 @@ main{
                     margin-bottom: 8px;
                     font-size: $paragraph-font-size-2;
                     color: $main-text-color;
+
+                    @media only screen and (max-width: 500px) {
+                        font-size: 18px;
+                    }
                 }
                 p.paragraph.paragraph--regular{
                     margin-bottom: 12px;
                     font-size: $paragraph-font-size-3;
                     color: $main-text-color;
                     line-height: 18px;
+
+                    @media only screen and (max-width: 500px) {
+                        font-size: 16px;
+                        margin-bottom: 14px;
+                    }
                 }
 
                 .social-icons{
@@ -143,6 +156,9 @@ main{
                     justify-content: space-between;
                     align-items: center;
                     width: 40%;
+                    @media only screen and (max-width: 500px) {
+                        width: 60%;
+                    }
 
                     a{
                         width: 16px;
@@ -152,6 +168,18 @@ main{
                         justify-content: center;
                         align-items: center;
                         // transition: all .3s ease;
+                        @media only screen and (max-width: 500px) {
+                            width: 22px;
+                            height: 22px;
+                        }
+                        
+                        // &:nth-child(1){
+                        //     @media only screen and (max-width: 500px) {
+                        //         width: 22px;
+                        //         height: 21px;
+                        //     }
+                        // }
+
 
                         &:hover {
                             filter: hue-rotate(264deg) brightness(.42) saturate(2);

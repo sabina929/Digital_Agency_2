@@ -865,6 +865,7 @@ footer#contact.big-screen article.upper h2 {
 @media only screen and (max-width: 600px) {
   footer#contact.big-screen article.upper h2 {
     width: 100%;
+    margin-bottom: 36px;
   }
 }
 
@@ -872,6 +873,13 @@ footer#contact.big-screen article.upper h2 {
   footer#contact.big-screen article.upper h2 {
     font-size: 26px;
     line-height: 32px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  footer#contact.big-screen article.upper h2 {
+    font-size: 25px;
+    line-height: 30px;
   }
 }
 
@@ -889,6 +897,21 @@ footer#contact.big-screen article.upper p {
 @media only screen and (max-width: 600px) {
   footer#contact.big-screen article.upper p {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  footer#contact.big-screen article.upper p {
+    width: 100%;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  footer#contact.big-screen article.upper p {
+    font-size: 16px;
+    line-height: 26px;
   }
 }
 
@@ -1063,6 +1086,12 @@ footer#contact.big-screen article.mid .contact-info .mail-phone p:not(:last-chil
   margin-bottom: 10px;
 }
 
+@media only screen and (max-width: 500px) {
+  footer#contact.big-screen article.mid .contact-info .mail-phone p {
+    font-size: 14px;
+  }
+}
+
 footer#contact.big-screen article.mid .contact-info .address {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1085,6 +1114,12 @@ footer#contact.big-screen article.mid .contact-info .address p {
 
 footer#contact.big-screen article.mid .contact-info .address p:not(:last-child) {
   margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  footer#contact.big-screen article.mid .contact-info .address p {
+    font-size: 14px;
+  }
 }
 
 footer#contact.big-screen article.mid .social-icons {
@@ -1138,6 +1173,12 @@ footer#contact.big-screen article.mid .social-icons a:not(:last-child) {
 footer#contact.big-screen article.lower p {
   font-size: 14px;
   opacity: .5;
+}
+
+@media only screen and (max-width: 500px) {
+  footer#contact.big-screen article.lower p {
+    font-size: 12px;
+  }
 }
 
 /* MEDIA QUERIES STARTS */
@@ -1304,6 +1345,13 @@ main section#hero h1 {
   }
 }
 
+@media only screen and (max-width: 320px) {
+  main section#hero h1 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
 main section#hero p {
   line-height: 30px;
   width: 50%;
@@ -1327,7 +1375,14 @@ main section#hero p {
   main section#hero p {
     width: 100%;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  main section#hero p {
+    font-size: 16px;
+    line-height: 26px;
   }
 }
 
@@ -1496,6 +1551,13 @@ main section#about h2 {
   }
 }
 
+@media only screen and (max-width: 320px) {
+  main section#about h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
 main section#about p {
   line-height: 30px;
   width: 56%;
@@ -1534,7 +1596,14 @@ main section#about p:not(:last-child) {
   main section#about p {
     width: 100%;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  main section#about p {
+    font-size: 16px;
+    line-height: 26px;
   }
 }
 
@@ -1664,6 +1733,13 @@ main section#services h2 {
     font-size: 26px;
     line-height: 32px;
     margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  main section#services h2 {
+    font-size: 25px;
+    line-height: 30px;
   }
 }
 
@@ -2026,6 +2102,13 @@ main section#projects h2 {
   }
 }
 
+@media only screen and (max-width: 320px) {
+  main section#projects h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
 main section#projects .projects-container {
   display: -ms-grid;
   display: grid;
@@ -2344,6 +2427,13 @@ main section#team h2 {
   }
 }
 
+@media only screen and (max-width: 320px) {
+  main section#team h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
 main section#team .members-container {
   display: -ms-grid;
   display: grid;
@@ -2452,11 +2542,24 @@ main section#team .members-container article.member div.member__info p.paragraph
   color: #13063D;
 }
 
+@media only screen and (max-width: 500px) {
+  main section#team .members-container article.member div.member__info p.paragraph.paragraph--bold {
+    font-size: 18px;
+  }
+}
+
 main section#team .members-container article.member div.member__info p.paragraph.paragraph--regular {
   margin-bottom: 12px;
   font-size: 14px;
   color: #13063D;
   line-height: 18px;
+}
+
+@media only screen and (max-width: 500px) {
+  main section#team .members-container article.member div.member__info p.paragraph.paragraph--regular {
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
 }
 
 main section#team .members-container article.member div.member__info .social-icons {
@@ -2476,6 +2579,12 @@ main section#team .members-container article.member div.member__info .social-ico
   width: 40%;
 }
 
+@media only screen and (max-width: 500px) {
+  main section#team .members-container article.member div.member__info .social-icons {
+    width: 60%;
+  }
+}
+
 main section#team .members-container article.member div.member__info .social-icons a {
   width: 16px;
   height: 16px;
@@ -2492,6 +2601,13 @@ main section#team .members-container article.member div.member__info .social-ico
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 500px) {
+  main section#team .members-container article.member div.member__info .social-icons a {
+    width: 22px;
+    height: 22px;
+  }
 }
 
 main section#team .members-container article.member div.member__info .social-icons a:hover {

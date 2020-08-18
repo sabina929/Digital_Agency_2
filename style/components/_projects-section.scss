@@ -73,6 +73,10 @@ main{
                 line-height: 32px;
                 margin-bottom: 40px;
             }
+            @media only screen and (max-width: 320px) {
+                font-size: 25px;
+                line-height: 30px;
+            }
         }
        
     
