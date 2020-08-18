@@ -187,7 +187,7 @@ function closeMenu(){
           },40)
         },40)
       },40)
-    },150)
+    },40)
 
   
 }
@@ -197,7 +197,7 @@ menuItemLinks.forEach(menuItemLink => {
   menuItemLink.addEventListener("click",()=>{
     setTimeout(()=>{
       closeMenu()
-    }, 500)
+    }, 400)
   })
    
 });
