@@ -11,7 +11,16 @@ footer#contact.big-screen {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    @media only screen and (max-width: 1100px) {
+      padding: 20px 60px;
+     }
+    
+    @media only screen and (max-width: 700px) {
+      padding: 20px 40px;
+     }
+    @media only screen and (max-width: 400px) {
+      padding: 20px 30px;
+     }
     article{
       &:not(:last-child){
         margin-bottom: 60px;
@@ -29,6 +38,20 @@ footer#contact.big-screen {
           width: 40%;
           margin-bottom: 40px;
           text-align: center;
+
+          @media only screen and (max-width: 1300px) {
+            width: 50%;
+           }
+          @media only screen and (max-width: 1200px) {
+            width: 60%;
+           }
+          @media only screen and (max-width: 1000px) {
+            width: 70%;
+           }
+           @media only screen and (max-width: 600px) {
+            width: 100%;
+            font-size: 28px;
+        }
         }
 
         p{
@@ -150,14 +173,6 @@ footer#contact.big-screen {
 
 }
 
-/* FOOTER FOR SMALL SCREENS */
-footer.small-screen {
-    width: 100vw;
-    height: auto;
-    margin: 0 auto;
-    padding: 0px 0;
-    
-}
 
 
 /* MEDIA QUERIES STARTS */
