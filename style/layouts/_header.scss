@@ -151,40 +151,23 @@ header.big-screen {
     // transition: all .7s ease;
     transition: all .7s cubic-bezier(0.77,-0.01, 0.59, 0.87);
 
+    @media only screen and (max-width: 1300px) {
+      padding:0px 0px 0 280px;
+    }
 
-    // transition: all .7s cubic-bezier(0.24, 0.18, 0, 1.25);
-    // z-index: 99999;
-
-    // &.open {
-        // display: flex;
-        // height: 100vh;
-        // width: 100vw;
-        // animation: menuDown .5s cubic-bezier(0.23, 0.28, 0.34, 0.93) forwards;
-        // top: 0px;
-        // transform: translate(-50%, 0px);
-      // }
+    @media only screen and (max-width: 1200px) {
+      padding:0px 0px 0 170px;
+    }
+    @media only screen and (max-width: 800px) {
+      padding:0px 0px 0 140px;
+    }
 
 
       ul {
         list-style: none;
 
         &.menu-items{
-          // &.menu-items-appear {
-          //   li{
-          //     &:nth-child(1) {
-          //       animation: itemAppear .8s ease 0.1s forwards;
-          //     }
-          //     &:nth-child(2) {
-          //       animation: itemAppear .8s ease .3s forwards;
-          //     }
-          //     &:nth-child(3) {
-          //       animation: itemAppear .8s ease .5s forwards;
-          //     }
-          //     &:nth-child(4) {
-          //       animation: itemAppear .8s ease .7s forwards;
-          //     }
-          //   }
-          // }
+     
           li{
             position: relative;
             display: flex;
@@ -198,6 +181,13 @@ header.big-screen {
 
             &:not(:last-child){
               margin-bottom: 30px;
+
+              @media only screen and (max-width: 900px) {
+                margin-bottom: 28px;
+              }
+              @media only screen and (max-width: 700px) {
+                margin-bottom: 24px;
+              }
             }
             a{
               text-decoration: none;
@@ -208,8 +198,20 @@ header.big-screen {
               clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
               transition: all .5s cubic-bezier(0.77,-0.01, 0.59, 0.87);
               transform: translateY(40px);
-            }
 
+              @media only screen and (max-width: 1300px) {
+                font-size: 48px;
+              }
+              @media only screen and (max-width: 1000px) {
+                font-size: 42px;
+              }
+              @media only screen and (max-width: 900px) {
+                font-size: 36px;
+              }
+              @media only screen and (max-width: 700px) {
+                font-size: 34px;
+              }
+            }
             &::before{
               content: url('../../assets/images/right-arrow-blue.svg');
               position: absolute;
@@ -219,6 +221,13 @@ header.big-screen {
               opacity: 0;
               // display: none;
               transition: all .5s ease; 
+             
+              @media only screen and (max-width: 900px) {
+                transform: translate(-50%, -50%) scale(0.9);
+              }
+              @media only screen and (max-width: 700px) {
+                transform: translate(-50%, -50%) scale(0.8);
+              }
             }
             
             &:hover::before{
@@ -230,6 +239,16 @@ header.big-screen {
               transition: all .5s ease; 
               color: $main-blue;
               margin-left: 60px;
+
+              @media only screen and (max-width: 1300px) {
+                transition: all .4s ease; 
+                margin-left: 40px;
+              }
+              @media only screen and (max-width: 1000px) {
+                transition: all .3s ease; 
+                margin-left: 30px;
+              }
+             
             }
           }
         }
@@ -238,31 +257,76 @@ header.big-screen {
           bottom: 0%;
           right: 0px;
           transform: translate(-50%, -50%);
+
+          @media only screen and (max-width: 1200px) {
+            right: -68px;
+          }
+          @media only screen and (max-width: 600px) {
+            position: relative;
+            top: 28%;
+            left: 50%;
+            width: 100%;
+            right: 0px;
+          }
           li{
             display: flex;
             flex-direction: column;
             align-items: flex-end;
             justify-content: center;
 
+            @media only screen and (max-width: 600px) {
+              align-items: flex-start;
+            }
+
            p{
             font-family: $font-family-1;
             font-size: 24px;
             color: $main-text-color;
             font-weight: 700;
+            text-align: right;
             margin-bottom: 10px;
             clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
             transition: all .5s cubic-bezier(0.77,-0.01, 0.59, 0.87);
             transform: translateY(20px);
+
+            
+            @media only screen and (max-width: 1300px) {
+              margin-bottom: 6px;
+              font-size: 22px;
+            }
+            @media only screen and (max-width: 1000px) {
+              margin-bottom: 4px;
+              font-size: 18px;
+            }
+            @media only screen and (max-width: 600px) {
+              text-align: left;
+            }
            }
             a{
               text-decoration: none;
               font-family: $font-family-2;
               font-size: 28px;
               color: $darker-blue;
+              text-align: right;
               transition: all .5s ease; 
               clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
               transition: all .5s cubic-bezier(0.77,-0.01, 0.59, 0.87);
               transform: translateY(20px);
+
+                
+              @media only screen and (max-width: 1300px) {
+                font-size: 26px;
+              }
+              @media only screen and (max-width: 1000px) {
+                font-size: 24px;
+              }
+              @media only screen and (max-width: 700px) {
+                font-size: 22px;
+              }
+
+              @media only screen and (max-width: 600px) {
+                text-align: left;
+              }
             }
 
          
