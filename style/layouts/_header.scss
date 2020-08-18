@@ -265,6 +265,10 @@ header.big-screen {
               // display: block;
               opacity: 1;
             }
+            &.opened:active::before{
+              // display: block;
+              opacity: 1;
+            }
 
             &.opened:hover a{
               transition: all .5s ease; 
@@ -278,10 +282,21 @@ header.big-screen {
               @media only screen and (max-width: 1000px) {
                 transition: all .3s ease; 
                 margin-left: 30px;
+              }             
+            }
+            &.opened:active a{
+              transition: all .5s ease; 
+              color: $main-blue;
+              margin-left: 60px;
+
+              @media only screen and (max-width: 1300px) {
+                transition: all .4s ease; 
+                margin-left: 40px;
               }
-           
-             
-             
+              @media only screen and (max-width: 1000px) {
+                transition: all .3s ease; 
+                margin-left: 30px;
+              }             
             }
           }
         }
