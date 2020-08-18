@@ -125,6 +125,9 @@ footer#contact.big-screen {
           justify-content: center;
           align-items: center;
         }
+        @media only screen and (max-width: 500px) {
+          height: 250px;
+        }
          
     
             .logo{
