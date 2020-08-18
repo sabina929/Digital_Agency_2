@@ -448,12 +448,6 @@ header.big-screen nav ul.menu-items li:not(:last-child) {
   }
 }
 
-@media only screen and (max-width: 400px) {
-  header.big-screen nav ul.menu-items li:not(:last-child) {
-    margin-bottom: 18px;
-  }
-}
-
 header.big-screen nav ul.menu-items li a {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
