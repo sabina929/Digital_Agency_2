@@ -39,17 +39,34 @@ footer#contact.big-screen {
           margin-bottom: 40px;
           text-align: center;
 
-          @media only screen and (max-width: 1300px) {
+          @media only screen and (max-width: 1500px) {
             width: 50%;
-           }
-          @media only screen and (max-width: 1200px) {
+        }
+        
+        @media only screen and (max-width: 1300px) {
             width: 60%;
            }
-          @media only screen and (max-width: 1000px) {
-            width: 70%;
+          @media only screen and (max-width: 1200px) {
+            width: 50%;
+            font-size: 40px;
            }
+          @media only screen and (max-width: 1100px) {
+            width: 62%;
+           }
+          @media only screen and (max-width: 900px) {
+            width: 70%;
+            font-size: 36px;
+           }
+           @media only screen and (max-width: 800px) {
+            width: 80%;
+           }
+           @media only screen and (max-width: 700px) {
+            width: 80%;
+            font-size: 34px;
+           }
+           
            @media only screen and (max-width: 600px) {
-            width: 100%;
+            width: 80%;
             font-size: 28px;
         }
         }
@@ -58,6 +75,10 @@ footer#contact.big-screen {
           line-height: 30px;
           text-align: center;
           // margin-bottom: 60px;
+
+          @media only screen and (max-width: 700px) {
+            width: 70%;
+           }
       }
       }
 

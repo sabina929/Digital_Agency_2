@@ -798,27 +798,54 @@ footer#contact.big-screen article.upper h2 {
   text-align: center;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1500px) {
   footer#contact.big-screen article.upper h2 {
     width: 50%;
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px) {
   footer#contact.big-screen article.upper h2 {
     width: 60%;
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
+  footer#contact.big-screen article.upper h2 {
+    width: 50%;
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  footer#contact.big-screen article.upper h2 {
+    width: 62%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
   footer#contact.big-screen article.upper h2 {
     width: 70%;
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  footer#contact.big-screen article.upper h2 {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  footer#contact.big-screen article.upper h2 {
+    width: 80%;
+    font-size: 34px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   footer#contact.big-screen article.upper h2 {
-    width: 100%;
+    width: 80%;
     font-size: 28px;
   }
 }
@@ -826,6 +853,12 @@ footer#contact.big-screen article.upper h2 {
 footer#contact.big-screen article.upper p {
   line-height: 30px;
   text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+  footer#contact.big-screen article.upper p {
+    width: 70%;
+  }
 }
 
 footer#contact.big-screen article.mid {
@@ -1061,6 +1094,36 @@ main section#hero {
   }
 }
 
+@media only screen and (max-width: 1300px) {
+  main section#hero {
+    padding: 140px 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  main section#hero {
+    padding: 130px 0;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  main section#hero {
+    padding: 120px 0;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  main section#hero {
+    padding: 110px 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  main section#hero {
+    padding: 100px 0;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   main section#hero {
     margin: 60px 40px 0px 40px;
@@ -1177,13 +1240,43 @@ main section#about {
 
 @media only screen and (max-width: 1550px) {
   main section#about {
-    margin: 0px 60px 80px 60px;
+    margin: 0px 60px 0px 60px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  main section#about {
+    padding: 60px 0 140px 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  main section#about {
+    padding: 60px 0 130px 0;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  main section#about {
+    padding: 60px 0 120px 0;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  main section#about {
+    padding: 60px 0 110px 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  main section#about {
+    padding: 60px 0 100px 0;
   }
 }
 
 @media only screen and (max-width: 400px) {
   main section#about {
-    margin: 0px 40px 80px 40px;
+    margin: 0px 40px 0px 40px;
   }
 }
 
@@ -1191,6 +1284,45 @@ main section#about h2 {
   width: 56%;
   margin-bottom: 80px;
   text-align: center;
+}
+
+@media only screen and (max-width: 1500px) {
+  main section#about h2 {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  main section#about h2 {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  main section#about h2 {
+    width: 70%;
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  main section#about h2 {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  main section#about h2 {
+    width: 70%;
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  main section#about h2 {
+    width: 80%;
+    font-size: 34px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1244,13 +1376,43 @@ main section#services {
 
 @media only screen and (max-width: 1550px) {
   main section#services {
-    margin: 0px 60px 80px 60px;
+    margin: 0px 60px 0px 60px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  main section#services {
+    padding: 60px 0 140px 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  main section#services {
+    padding: 60px 0 130px 0;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  main section#services {
+    padding: 60px 0 120px 0;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  main section#services {
+    padding: 60px 0 110px 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  main section#services {
+    padding: 60px 0 100px 0;
   }
 }
 
 @media only screen and (max-width: 400px) {
   main section#services {
-    margin: 0px 40px 80px 40px;
+    margin: 0px 40px 0px 40px;
   }
 }
 
@@ -1260,9 +1422,42 @@ main section#services h2 {
   text-align: center;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1500px) {
   main section#services h2 {
-    width: 90%;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  main section#services h2 {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  main section#services h2 {
+    width: 70%;
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  main section#services h2 {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  main section#services h2 {
+    width: 70%;
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  main section#services h2 {
+    width: 80%;
+    font-size: 34px;
   }
 }
 
@@ -1518,13 +1713,43 @@ main section#projects {
 
 @media only screen and (max-width: 1550px) {
   main section#projects {
-    margin: 0px 60px 80px 60px;
+    margin: 0px 60px 0px 60px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  main section#projects {
+    padding: 60px 0 140px 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  main section#projects {
+    padding: 60px 0 130px 0;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  main section#projects {
+    padding: 60px 0 120px 0;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  main section#projects {
+    padding: 60px 0 110px 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  main section#projects {
+    padding: 60px 0 100px 0;
   }
 }
 
 @media only screen and (max-width: 400px) {
   main section#projects {
-    margin: 0px 40px 80px 40px;
+    margin: 0px 40px 0px 40px;
   }
 }
 
@@ -1534,9 +1759,42 @@ main section#projects h2 {
   text-align: center;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1500px) {
   main section#projects h2 {
-    width: 90%;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  main section#projects h2 {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  main section#projects h2 {
+    width: 70%;
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  main section#projects h2 {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  main section#projects h2 {
+    width: 70%;
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  main section#projects h2 {
+    width: 80%;
+    font-size: 34px;
   }
 }
 
@@ -1783,10 +2041,58 @@ main section#team {
           align-items: center;
 }
 
+@media only screen and (max-width: 1550px) {
+  main section#team {
+    margin: 0px 60px 0px 60px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  main section#team {
+    padding: 60px 0 140px 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  main section#team {
+    padding: 60px 0 130px 0;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  main section#team {
+    padding: 60px 0 120px 0;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  main section#team {
+    padding: 60px 0 110px 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  main section#team {
+    padding: 60px 0 100px 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  main section#team {
+    margin: 0px 40px 0px 40px;
+  }
+}
+
 main section#team h2 {
   width: 40%;
   margin-bottom: 100px;
   text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  main section#team h2 {
+    font-size: 40px;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -1843,7 +2149,7 @@ main section#team .members-container {
   }
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 600px) {
   main section#team .members-container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
