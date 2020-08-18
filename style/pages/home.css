@@ -1151,6 +1151,12 @@ main {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  main {
+    padding: 0px 40px;
+  }
+}
+
 main section#hero {
   width: 100%;
   height: auto;
@@ -1412,6 +1418,7 @@ main section#about h2 {
   main section#about h2 {
     width: 100%;
     font-size: 28px;
+    margin-bottom: 60px;
   }
 }
 
@@ -1434,6 +1441,12 @@ main section#about p:not(:last-child) {
 @media only screen and (max-width: 1100px) {
   main section#about p {
     width: 90%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main section#about p {
+    font-size: 18px;
   }
 }
 
@@ -1548,6 +1561,7 @@ main section#services h2 {
   main section#services h2 {
     width: 100%;
     font-size: 28px;
+    margin-bottom: 60px;
   }
 }
 
@@ -1883,8 +1897,9 @@ main section#projects h2 {
 
 @media only screen and (max-width: 600px) {
   main section#projects h2 {
-    width: 100%;
+    width: 90%;
     font-size: 28px;
+    margin-bottom: 60px;
   }
 }
 
@@ -2188,6 +2203,7 @@ main section#team h2 {
   main section#team h2 {
     width: 100%;
     font-size: 28px;
+    margin-bottom: 60px;
   }
 }
 
