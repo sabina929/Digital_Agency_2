@@ -361,7 +361,7 @@ header.big-screen nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #FFFFFF;
+  background-color: #FCFFFF;
   padding: 0px 48px 0 310px;
   -webkit-transition: all 0.7s cubic-bezier(0.77, -0.01, 0.59, 0.87);
   transition: all 0.7s cubic-bezier(0.77, -0.01, 0.59, 0.87);
