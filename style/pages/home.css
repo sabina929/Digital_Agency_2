@@ -1176,6 +1176,12 @@ main {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  main {
+    padding: 0px 30px;
+  }
+}
+
 main section#hero {
   width: 100%;
   height: auto;
@@ -1240,7 +1246,7 @@ main section#hero {
 
 @media only screen and (max-width: 400px) {
   main section#hero {
-    margin: 60px 40px 0px 40px;
+    margin: 60px auto 0px auto;
   }
 }
 
@@ -1321,7 +1327,7 @@ main section#hero p {
   main section#hero p {
     width: 100%;
     font-size: 18px;
-    line-height: 26px;
+    line-height: 30px;
   }
 }
 
@@ -1417,9 +1423,15 @@ main section#about {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  main section#about {
+    padding: 60px 0 60px 0;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   main section#about {
-    margin: 0px 40px 0px 40px;
+    margin: 0px auto 0px auto;
   }
 }
 
@@ -1480,6 +1492,7 @@ main section#about h2 {
   main section#about h2 {
     font-size: 26px;
     line-height: 32px;
+    margin-bottom: 40px;
   }
 }
 
@@ -1514,6 +1527,14 @@ main section#about p:not(:last-child) {
 @media only screen and (max-width: 600px) {
   main section#about p {
     text-align: left;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main section#about p {
+    width: 100%;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
@@ -1570,6 +1591,12 @@ main section#services {
 @media only screen and (max-width: 900px) {
   main section#services {
     padding: 60px 0 100px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main section#services {
+    padding: 60px 0 60px 0;
   }
 }
 
@@ -1636,6 +1663,7 @@ main section#services h2 {
   main section#services h2 {
     font-size: 26px;
     line-height: 32px;
+    margin-bottom: 40px;
   }
 }
 
@@ -1684,13 +1712,6 @@ main section#services .services-container {
         grid-template-columns: 260px;
     -ms-grid-rows: (auto)[4];
         grid-template-rows: repeat(4, auto);
-  }
-}
-
-@media only screen and (max-width: 440px) {
-  main section#services .services-container {
-    -ms-grid-columns: 240px;
-        grid-template-columns: 240px;
   }
 }
 
@@ -1804,7 +1825,7 @@ main section#services .services-container article.service div.service__info {
 
 @media only screen and (max-width: 500px) {
   main section#services .services-container article.service div.service__info {
-    padding: 30px;
+    padding: 22px;
   }
 }
 
@@ -1831,9 +1852,23 @@ main section#services .services-container article.service div.service__info h3 {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  main section#services .services-container article.service div.service__info h3 {
+    font-size: 19px;
+    margin-bottom: 12px;
+  }
+}
+
 main section#services .services-container article.service div.service__info p {
   font-size: 14px;
   line-height: 17px;
+}
+
+@media only screen and (max-width: 500px) {
+  main section#services .services-container article.service div.service__info p {
+    font-size: 15px;
+    line-height: 21px;
+  }
 }
 
 main section#services .services-container article.service a {
@@ -1918,6 +1953,12 @@ main section#projects {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  main section#projects {
+    padding: 60px 0 60px 0;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   main section#projects {
     margin: 0px 40px 0px 40px;
@@ -1981,6 +2022,7 @@ main section#projects h2 {
   main section#projects h2 {
     font-size: 26px;
     line-height: 32px;
+    margin-bottom: 40px;
   }
 }
 
@@ -2256,6 +2298,12 @@ main section#team {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  main section#team {
+    padding: 60px 0 60px 0;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   main section#team {
     margin: 0px 40px 0px 40px;
@@ -2292,6 +2340,7 @@ main section#team h2 {
   main section#team h2 {
     font-size: 26px;
     line-height: 32px;
+    margin-bottom: 40px;
   }
 }
 

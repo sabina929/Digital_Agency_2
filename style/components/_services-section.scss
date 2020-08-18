@@ -29,6 +29,9 @@ section#services{
     @media only screen and (max-width: 900px) {
         padding: 60px 0 100px 0;
     }
+    @media only screen and (max-width: 500px) {
+        padding: 60px 0 60px 0;
+    }
     @media only screen and (max-width: 400px) {
         margin: 0px 40px 0px 40px;
     }
@@ -68,6 +71,7 @@ section#services{
         @media only screen and (max-width: 360px) {
             font-size: 26px;
             line-height: 32px;
+            margin-bottom: 40px;
         }
     }
    
@@ -100,11 +104,11 @@ section#services{
             grid-template-rows: repeat(4, auto);
 
         }
-        @media only screen and (max-width: 440px) {
+        // @media only screen and (max-width: 440px) {
            
-            grid-template-columns: 240px;
+        //     grid-template-columns: 240px;
 
-        }
+        // }
     article.service{
         width: 500px;
         height: 100%;
@@ -151,6 +155,9 @@ section#services{
             flex-direction: column;
             padding: 0 0px 0 0;
         }
+        // @media only screen and (max-width: 440px) {
+        //     width: 240px;
+        // }
 
         img.service__pattern {
             width: auto;
@@ -172,7 +179,7 @@ section#services{
             justify-content: center;
             align-items: flex-start;
             @media only screen and (max-width: 500px) {
-                 padding: 30px;
+                padding: 22px;
             }
             h3{
                 margin-bottom: 15px;
@@ -186,14 +193,19 @@ section#services{
                     margin-bottom: 10px;
                     font-size: 18px;
                 }
+                @media only screen and (max-width: 500px) {
+                    font-size: 19px;
+                    margin-bottom: 12px;
+                }
             }
             p{
                 font-size: $paragraph-font-size-3;
                 line-height: 17px;
-                // @media only screen and (max-width: 400px) {
-                //     font-size: 14px;
-                   
-                // }
+                
+                @media only screen and (max-width: 500px) {
+                    font-size: 15px;
+                    line-height: 21px;
+                }
             }
         }
 
