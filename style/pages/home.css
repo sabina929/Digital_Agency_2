@@ -1837,6 +1837,19 @@ main section#team .members-container {
   }
 }
 
+@media only screen and (max-width: 800px) {
+  main section#team .members-container {
+    grid-gap: 40px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  main section#team .members-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 main section#team .members-container article.member {
   width: 230px;
   height: auto;

@@ -44,6 +44,14 @@ main{
             @media only screen and (max-width: 1050px) {
                 grid-template-columns: 1fr 1fr;
             }
+            @media only screen and (max-width: 800px) {
+                grid-gap: 40px;
+            }
+
+            @media only screen and (max-width: 1050px) {
+                grid-template-columns: 1fr;
+            }
+
         article.member{
             width: 230px;
             height: auto;
@@ -54,16 +62,11 @@ main{
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-
-            // &:not(:last-child){
-            //     margin-right: 60px;
-            // }
-
-            // @media only screen and (max-width: 1550px) {
-            //     margin-bottom: 60px;
-            // }
-            
             transition: all .3s ease;
+
+            // @media only screen and (max-width: 600px) {
+            //     width: 240px;
+            // }
     
             &:hover{
                 transform: translateY(4px);
