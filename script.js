@@ -46,8 +46,6 @@ function openMenu(){
       
       setTimeout(() => {
         dot3.style.display = "none"
-        // menuList.classList.toggle("menu-items-appear");
-        
         
         setTimeout(() => {
           dot4.style.display = "none"
@@ -73,7 +71,7 @@ function openMenu(){
                     menuItemLink2.style.clipPath = "polygon(0 0, 100% 0, 100% 100%, 0% 100%)"
                     menuItemLink2.style.transform = "translateY(0px)"
                     setTimeout(() => {
-                      menuIcon.classList.add('clicked')
+                      menuIcon.classList.toggle('clicked')
                    
                       setTimeout(() => {
                         menuItemLink3.style.clipPath = "polygon(0 0, 100% 0, 100% 100%, 0% 100%)"
