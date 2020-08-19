@@ -12,14 +12,15 @@ footer#contact.big-screen {
     justify-content: center;
     align-items: center;
     @media only screen and (max-width: 1100px) {
-      padding: 20px 60px;
+      padding: 60px 60px 20px 60px;
      }
     
     @media only screen and (max-width: 700px) {
-      padding: 20px 40px;
+      padding: 60px 40px 20px 40px;
      }
     @media only screen and (max-width: 400px) {
-      padding: 20px 30px;
+      // padding: 20px 30px;
+      padding: 60px 30px 20px 30px;
      }
     article{
       &:not(:last-child){
@@ -37,6 +38,9 @@ footer#contact.big-screen {
         align-items: center;
         width: 100%;
         margin-bottom: 100px;
+        @media only screen and (max-width: 700px) {
+          margin-bottom: 90px;
+        }
         @media only screen and (max-width: 500px) {
           margin-bottom: 60px;
         }
@@ -125,9 +129,12 @@ footer#contact.big-screen {
           justify-content: center;
           align-items: center;
         }
-        @media only screen and (max-width: 500px) {
+        @media only screen and (max-width: 700px) {
           height: 250px;
         }
+        // @media only screen and (max-width: 500px) {
+        //   height: 250px;
+        // }
          
     
             .logo{
