@@ -1158,8 +1158,8 @@ footer#contact.big-screen article.mid .social-icons a {
 }
 
 footer#contact.big-screen article.mid .social-icons a:hover {
-  -webkit-filter: hue-rotate(264deg) brightness(0.42) saturate(2);
-          filter: hue-rotate(264deg) brightness(0.42) saturate(2);
+  -webkit-filter: hue-rotate(270deg) brightness(0.45) saturate(2);
+          filter: hue-rotate(270deg) brightness(0.45) saturate(2);
 }
 
 footer#contact.big-screen article.mid .social-icons a img {
@@ -2501,7 +2501,7 @@ main section#team .members-container article.member {
   -webkit-box-shadow: 0px 25px 50px rgba(37, 24, 83, 0.07);
           box-shadow: 0px 25px 50px rgba(37, 24, 83, 0.07);
   background-color: #FCFFFF;
-  padding: 30px;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2509,8 +2509,9 @@ main section#team .members-container article.member {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2519,9 +2520,9 @@ main section#team .members-container article.member {
 }
 
 main section#team .members-container article.member img.member__image {
-  width: 112px;
-  height: 112px;
-  margin-bottom: 30px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0px;
 }
 
 main section#team .members-container article.member div.member__info {
@@ -2540,6 +2541,7 @@ main section#team .members-container article.member div.member__info {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 24px;
 }
 
 main section#team .members-container article.member div.member__info p.paragraph.paragraph--bold {
@@ -2616,13 +2618,12 @@ main section#team .members-container article.member div.member__info .social-ico
   }
 }
 
-main section#team .members-container article.member div.member__info .social-icons a:hover {
-  -webkit-filter: hue-rotate(264deg) brightness(0.42) saturate(2);
-          filter: hue-rotate(264deg) brightness(0.42) saturate(2);
-}
-
-main section#team .members-container article.member div.member__info .social-icons a img {
+main section#team .members-container article.member div.member__info .social-icons a svg {
   width: 100%;
   height: 100%;
+}
+
+main section#team .members-container article.member div.member__info .social-icons a:hover svg path {
+  fill: #3913B8;
 }
 /*# sourceMappingURL=home.css.map */

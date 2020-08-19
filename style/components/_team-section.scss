@@ -70,6 +70,7 @@ main{
             // flex-direction: row;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            // grid-template-columns: 230px 230px 230px 230px 230px;
             grid-gap: 60px;
             justify-content: center;
             align-items: center;
@@ -77,6 +78,7 @@ main{
 
             @media only screen and (max-width: 1550px) {
                 grid-template-columns: 1fr 1fr 1fr 1fr;
+                // grid-template-columns: 1fr 1fr 1fr 1fr;
             }
             @media only screen and (max-width: 1350px) {
                 grid-template-columns: 1fr 1fr 1fr;
@@ -92,15 +94,121 @@ main{
                 grid-template-columns: 1fr;
             }
 
+        // article.member{
+        //     width: 230px;
+        //     height: auto;
+        //     box-shadow: $card-box-shadow;
+        //     background-color: $secondary-background;
+        //     padding: 30px;
+        //     display: flex;
+        //     flex-direction: column;
+        //     justify-content: space-around;
+        //     align-items: center;
+        //     transition: all .3s ease;
+
+        //     // @media only screen and (max-width: 600px) {
+        //     //     width: 240px;
+        //     // }
+    
+        //     // &:hover{
+        //     //     transform: translateY(4px);
+        //     //     box-shadow: 1px 4px 4px 1px rgba(57, 19, 184, 0.05);
+        //     // }
+    
+        //     img.member__image {
+        //         width: 112px;
+        //         height: 112px;
+        //         margin-bottom: 30px;
+        //     }
+         
+        //     div.member__info{
+        //         // padding: 36px 36px 50px 36px;
+        //         width: 100%;
+        //         height: auto;
+        //         display: flex;
+        //         flex-direction: column;
+        //         justify-content: center;
+        //         align-items: center;
+               
+
+        //         p.paragraph.paragraph--bold{
+        //             margin-bottom: 8px;
+        //             font-size: $paragraph-font-size-2;
+        //             color: $main-text-color;
+
+        //             @media only screen and (max-width: 500px) {
+        //                 font-size: 18px;
+        //             }
+        //         }
+        //         p.paragraph.paragraph--regular{
+        //             margin-bottom: 12px;
+        //             font-size: $paragraph-font-size-3;
+        //             color: $main-text-color;
+        //             line-height: 18px;
+
+        //             @media only screen and (max-width: 500px) {
+        //                 font-size: 16px;
+        //                 margin-bottom: 14px;
+        //             }
+        //         }
+
+        //         .social-icons{
+        //             display: flex;
+        //             flex-direction: row;
+        //             justify-content: space-between;
+        //             align-items: center;
+        //             width: 40%;
+        //             @media only screen and (max-width: 500px) {
+        //                 width: 60%;
+        //             }
+
+        //             a{
+        //                 width: 16px;
+        //                 height: 16px;
+        //                 display: flex;
+        //                 flex-direction: column;
+        //                 justify-content: center;
+        //                 align-items: center;
+        //                 // transition: all .3s ease;
+        //                 @media only screen and (max-width: 500px) {
+        //                     width: 22px;
+        //                     height: 22px;
+        //                 }
+                        
+        //                 // &:nth-child(1){
+        //                 //     @media only screen and (max-width: 500px) {
+        //                 //         width: 22px;
+        //                 //         height: 21px;
+        //                 //     }
+        //                 // }
+
+
+        //                 &:hover {
+        //                     filter: hue-rotate(264deg) brightness(.42) saturate(2);
+        //                 }
+
+        //                 img{
+        //                     width: 100%;
+        //                     height: 100%;
+        //                 }
+        //             }
+        //         }
+                
+        //     }
+
+          
+        // }
+
         article.member{
             width: 230px;
             height: auto;
             box-shadow: $card-box-shadow;
             background-color: $secondary-background;
-            padding: 30px;
+           overflow: hidden;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            // justify-content: space-around;
+            justify-content: center;
             align-items: center;
             transition: all .3s ease;
 
@@ -114,9 +222,10 @@ main{
             // }
     
             img.member__image {
-                width: 112px;
-                height: 112px;
-                margin-bottom: 30px;
+                width: 100%;
+                height: auto;
+                // margin-bottom: 30px;
+                margin-bottom: 0px;
             }
          
             div.member__info{
@@ -127,6 +236,8 @@ main{
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                // padding: 30px;
+                padding:24px;
                
 
                 p.paragraph.paragraph--bold{
@@ -167,7 +278,7 @@ main{
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-                        // transition: all .3s ease;
+                        
                         @media only screen and (max-width: 500px) {
                             width: 22px;
                             height: 22px;
@@ -180,15 +291,21 @@ main{
                         //     }
                         // }
 
-
-                        &:hover {
-                            filter: hue-rotate(264deg) brightness(.42) saturate(2);
-                        }
-
-                        img{
+                        svg{
                             width: 100%;
                             height: 100%;
+
                         }
+
+                        &:hover svg path{
+                            // filter: hue-rotate(264deg) brightness(.42) saturate(2);
+                            fill: $darker-blue;
+                        }
+
+                        // img{
+                        //     width: 100%;
+                        //     height: 100%;
+                        // }
                     }
                 }
                 
