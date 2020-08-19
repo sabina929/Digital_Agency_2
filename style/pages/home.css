@@ -2629,7 +2629,7 @@ main section#team .members-container article.member div.member__info p.paragraph
 @media only screen and (max-width: 500px) {
   main section#team .members-container article.member div.member__info p.paragraph.paragraph--regular {
     font-size: 16px;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
   }
 }
 
