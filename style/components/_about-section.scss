@@ -108,6 +108,9 @@ section#about{
             line-height: 28px;
             font-weight: 400;
         }
+        @media only screen and (max-width: 360px) {
+            width: 90%;
+        }
         @media only screen and (max-width: 320px) {
             font-size: 16px;
             line-height: 26px;

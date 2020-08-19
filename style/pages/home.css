@@ -1603,6 +1603,12 @@ main section#about p:not(:last-child) {
   }
 }
 
+@media only screen and (max-width: 360px) {
+  main section#about p {
+    width: 90%;
+  }
+}
+
 @media only screen and (max-width: 320px) {
   main section#about p {
     font-size: 16px;
@@ -1794,6 +1800,27 @@ main section#services .services-container {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  main section#services .services-container {
+    -ms-grid-columns: 300px;
+        grid-template-columns: 300px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  main section#services .services-container {
+    -ms-grid-columns: 260px;
+        grid-template-columns: 260px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  main section#services .services-container {
+    -ms-grid-columns: 230px;
+        grid-template-columns: 230px;
+  }
+}
+
 main section#services .services-container article.service {
   width: 500px;
   height: 100%;
@@ -1864,6 +1891,24 @@ main section#services .services-container article.service {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0 0px 0 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  main section#services .services-container article.service {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  main section#services .services-container article.service {
+    width: 260px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  main section#services .services-container article.service {
+    width: 230px;
   }
 }
 
@@ -2517,6 +2562,24 @@ main section#team .members-container article.member {
           align-items: center;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
+}
+
+@media only screen and (max-width: 450px) {
+  main section#team .members-container article.member {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  main section#team .members-container article.member {
+    width: 260px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  main section#team .members-container article.member {
+    width: 230px;
+  }
 }
 
 main section#team .members-container article.member img.member__image {
