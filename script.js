@@ -37,6 +37,8 @@ function checkMenuIsOpened(){
 }
 function openMenu(){
     isMenuOpened = true;
+    console.log("openMenu()", isMenuOpened)
+
     dot1.style.display = "none"
     // menuContainer.style.display = "flex"
     // menuContainer.style.transform = "translate(-50%, 0px)"
@@ -112,6 +114,8 @@ function openMenu(){
 }
 function closeMenu(){
     isMenuOpened = false;
+    console.log("closeMenu()", isMenuOpened)
+
     // menuList.classList.remove("menu-items-appear");
     menuIcon.classList.remove('clicked')
 
@@ -123,22 +127,28 @@ function closeMenu(){
     setTimeout(() => {
       menuContactParagraph.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)"
       menuContactParagraph.style.transform = "translateY(20px)"
+      // debugger
       setTimeout(() => {
         menuContactLink.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)"
         menuContactLink.style.transform = "translateY(20px)"
+        // debugger
         setTimeout(() => {
-          menuItemLink1.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)"
-          menuItemLink1.style.transform = "translateY(40px)"
+          menuItemLink4.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)"
+          menuItemLink4.style.transform = "translateY(40px)"
+          // debugger
           setTimeout(() => {
-            menuItemLink2.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)"
-            menuItemLink2.style.transform = "translateY(40px)"
-
+            menuItemLink3.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)"
+            menuItemLink3.style.transform = "translateY(40px)"
+            // debugger
+            
             setTimeout(() => {
-              menuItemLink3.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)"
-              menuItemLink3.style.transform = "translateY(40px)"
+              menuItemLink2.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)"
+              menuItemLink2.style.transform = "translateY(40px)"
+              // debugger
               setTimeout(() => {
-                menuItemLink4.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)"
-                menuItemLink4.style.transform = "translateY(40px)"
+                menuItemLink1.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)"
+                menuItemLink1.style.transform = "translateY(40px)"
+                // debugger
                 setTimeout(() => {
                 dot9.style.display = "block"
                 menuContainer.style.clipPath = "circle(0% at 50% 0)"
