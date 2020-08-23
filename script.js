@@ -125,12 +125,12 @@ function closeMenu(){
     menuItemLink4.parentNode.classList.remove('opened')
     
     setTimeout(() => {
-      menuContactParagraph.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)"
-      menuContactParagraph.style.transform = "translateY(20px)"
+      menuContactLink.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)"
+      menuContactLink.style.transform = "translateY(20px)"
       // debugger
       setTimeout(() => {
-        menuContactLink.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)"
-        menuContactLink.style.transform = "translateY(20px)"
+        menuContactParagraph.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)"
+        menuContactParagraph.style.transform = "translateY(20px)"
         // debugger
         setTimeout(() => {
           menuItemLink4.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)"
