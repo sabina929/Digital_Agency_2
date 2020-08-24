@@ -37,7 +37,7 @@ function checkMenuIsOpened(){
 }
 function openMenu(){
     isMenuOpened = true;
-    console.log("openMenu()", isMenuOpened)
+    // console.log("openMenu()", isMenuOpened)
 
     dot1.style.display = "none"
     // menuContainer.style.display = "flex"
@@ -114,7 +114,7 @@ function openMenu(){
 }
 function closeMenu(){
     isMenuOpened = false;
-    console.log("closeMenu()", isMenuOpened)
+    // console.log("closeMenu()", isMenuOpened)
 
     // menuList.classList.remove("menu-items-appear");
     menuIcon.classList.remove('clicked')
