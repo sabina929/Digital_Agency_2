@@ -1510,7 +1510,7 @@ main section#hero div.hero-text-content a img {
 
 @media only screen and (max-width: 420px) {
   main section#hero div.hero-text-content a {
-    width: 240px;
+    width: 200px;
   }
 }
 
