@@ -22,133 +22,230 @@ main{
         width: 100%;
         height: auto; 
         margin: 60px 80px 0px 80px;
-        padding: 160px 0;
+        // padding: 160px 0;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
         // border: $border-check-2;
 
         @media only screen and (max-width: 1550px) {
             margin: 60px 60px 0px 60px;
         }
-
-        @media only screen and (max-width: 1300px) {
-            padding: 140px 0;
+        @media only screen and (max-width: 1250px) {
+            margin: 0px 60px 0px 60px;
         }
-        @media only screen and (max-width: 1200px) {
-            padding: 130px 0;
-        }
-        @media only screen and (max-width: 1100px) {
-            padding: 120px 0;
-        }
-        @media only screen and (max-width: 1000px) {
-            padding: 110px 0;
-        }
-        @media only screen and (max-width: 900px) {
-            padding: 100px 0;
-        }
-        @media only screen and (max-width: 500px) {
-            padding: 60px 0;
-        }
-        @media only screen and (max-width: 400px) {
-            margin: 60px auto 0px auto;
-        }
-        h1{
-            width: 60%;
-            margin-bottom: 40px;
-            text-align: center;
-            @media only screen and (max-width: 1486px) {
-                width: 90%;
-            }
-            @media only screen and (max-width: 1200px) {
-                font-size: 48px;
-                width: 100%;
-            }
-            @media only screen and (max-width: 1000px) {
-                font-size: 42px;
-                line-height: 52px;
-            }
-          
-            
-            @media only screen and (max-width: 500px) {
-                font-size: 36px;
-                line-height: 48px;
-            }
-            @media only screen and (max-width: 450px) {
-                font-size: 32px;
-                line-height: 40px;
-            }
-            @media only screen and (max-width: 400px) {
-                font-size: 30px;
-                line-height: 36px;
-            }
-            @media only screen and (max-width: 360px) {
-                font-size: 26px;
-                line-height: 32px;
-            }
-            @media only screen and (max-width: 320px) {
-                font-size: 25px;
-                line-height: 30px;
-            }
-            
-            
-        }
-        p{
-            line-height: 30px;
-            width: 50%;
-            text-align: center;
-            margin-bottom: 60px;
-
-            @media only screen and (max-width: 1200px) {
-                width: 60%;
-            }
-            @media only screen and (max-width: 1000px) {
-                width: 80%;
-            }
-            @media only screen and (max-width: 500px) {
-                width: 100%;
-                font-size: 18px;
-                line-height: 28px;
-                font-weight: 400;
-            }
-            @media only screen and (max-width: 320px) {
-                font-size: 16px;
-                line-height: 26px;
-            }
-        }
-
-        a{
-            text-decoration: none;
-            color: $primary-background;
-            background-color: $main-magenta;
-            font-weight: 500;
-            font-family: $font-family-2;
-            font-size: $paragraph-font-size-2;
-            height: 40px;
-            width: 200px;
-            padding: 12px 24px;
-            display: flex;
-            flex-direction: row;
+        @media only screen and (max-width: 1030px) {
+            flex-direction: column-reverse;
             justify-content: space-between;
             align-items: center;
-            // border-bottom-left-radius: 25px;
-            // border-top-left-radius: 25px;
-            // border-top-right-radius: 25px;
-            // border-bottom-right-radius: 0px;
-            transition: all .2s ease-in;   
-            
-            &:hover{
-                // border-bottom-left-radius: 25px;
-                // border-top-left-radius: 0px;
-                // border-top-right-radius: 25px;
-                // border-bottom-right-radius: 25px;
-                background-color: $darker-blue;
-            }
+            margin: 0px 60px 60px 60px;
+        }
+  
+        @media only screen and (max-width: 400px) {
+            margin: 0px auto 48px auto;
+        }
 
-            img{
-                animation: moveToRight 1.4s ease 0s infinite;
+        div.hero-text-content{
+            width: 54%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            @media only screen and (max-width: 1270px) {
+                width: 60%;
+            }
+         
+            @media only screen and (max-width: 1030px) {
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+            }
+         
+
+            h1{
+                margin-bottom: 40px;
+                text-align: left;
+                width: 100%;
+                @media only screen and (max-width: 1486px) {
+                    font-size: 48px;
+                }
+                @media only screen and (max-width: 1420px) {
+                    font-size: 46px;
+                }
+                @media only screen and (max-width: 1360px) {
+                    font-size: 44px;
+                    line-height: 60px;
+                }
+                @media only screen and (max-width: 1320px) {
+                    font-size: 42px;
+                    line-height: 56px;
+                }
+                @media only screen and (max-width: 1220px) {
+                    font-size: 36px;
+                    line-height: 52px;
+                }
+                @media only screen and (max-width: 1160px) {
+                    font-size: 34px;
+                    line-height: 48px;
+                }
+                @media only screen and (max-width: 1090px) {
+                    font-size: 32px;
+                    line-height: 44px;
+                }
+                @media only screen and (max-width: 1030px) {
+                    text-align: center;
+                    font-size: 42px;
+                    line-height: 52px;
+                }
+              
+                
+                @media only screen and (max-width: 500px) {
+                    font-size: 36px;
+                    line-height: 48px;
+                }
+                @media only screen and (max-width: 450px) {
+                    font-size: 32px;
+                    line-height: 40px;
+                    br{
+                        display: none;
+                    }
+                }
+                @media only screen and (max-width: 400px) {
+                    font-size: 30px;
+                    line-height: 36px;
+                }
+                @media only screen and (max-width: 360px) {
+                    font-size: 26px;
+                    line-height: 32px;
+                }
+                @media only screen and (max-width: 320px) {
+                    font-size: 25px;
+                    line-height: 30px;
+                }
+                
+                
+            }
+            p{
+                line-height: 30px;
+                width: 79%;
+                text-align: left;
+                margin-bottom: 60px;
+    
+                @media only screen and (max-width: 1297px) {
+                    width: 82%;
+                }
+                @media only screen and (max-width: 1163px) {
+                    width: 90%;
+                }
+                @media only screen and (max-width: 1090px) {
+                    font-size: 18px;
+                }
+                @media only screen and (max-width: 1030px) {
+                    text-align: center;
+                    width: 80%;
+                }
+                @media only screen and (max-width: 520px) {
+                    width: 100%;
+                    font-size: 18px;
+                    line-height: 28px;
+                    font-weight: 400;
+                    margin-bottom: 48px;
+                }
+                @media only screen and (max-width: 320px) {
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+            }
+    
+            a{
+                text-decoration: none;
+                color: $primary-background;
+                background-color: $main-magenta;
+                font-weight: 500;
+                font-family: $font-family-2;
+                font-size: $paragraph-font-size-2;
+                height: 40px;
+                width: 200px;
+                padding: 12px 24px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                transition: all .2s ease-in;   
+                
+                &:hover{
+                    background-color: $darker-blue;
+                }
+    
+                img{
+                    animation: moveToRight 1.4s ease 0s infinite;
+                }
+
+                @media only screen and (max-width: 420px) {
+                    width: 240px;
+                }
+
             }
         }
+
+        div.hero-pattern-container{
+            width: 36%;
+            height: auto;
+            opacity: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          
+            @media only screen and (max-width: 1486px) {
+              width: 30%;
+            }
+            // @media only screen and (max-width: 1300px) {
+            //   width: 28%;
+            // }
+            @media only screen and (max-width: 1030px) {
+                transform: rotate(90deg);
+                width: 60%;
+            }
+            @media only screen and (max-width: 520px) {
+                width: 100%;
+                transform: rotate(0deg);
+            }
+            svg {
+              width: 100%;
+            //   width:471;
+            //   height:628;
+            //   height:70%;
+              rect{
+                transition: all 1s ease;
+                transform-origin: 50% 50%;
+                
+                &:hover{
+                  opacity: 1;
+                }
+                
+                
+                &.opac-0{
+                  opacity: 0;
+                }
+              }
+              path{
+                transform-origin: 50% 50%;
+                transition: all 1s ease;
+                
+                &:hover{
+                  opacity: 1;
+                }
+          
+          
+                &.opac-0{
+                  opacity: 0;
+                }
+          
+          
+              }
+            }
+          }
     }
 }

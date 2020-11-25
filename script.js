@@ -211,3 +211,31 @@ menuItemLinks.forEach(menuItemLink => {
   })
    
 });
+
+
+
+// HERO PATTERN HOVER EFFECTS
+
+const shapePaths = document.querySelectorAll('svg > path.path');
+
+shapePaths.forEach(shapePath => {
+  shapePath.addEventListener("mouseover", (e)=>{
+    e.target.style.opacity = 1
+    // e.target.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.style.opacity = 0
+    e.target.previousElementSibling.previousElementSibling.previousElementSibling.style.opacity = 0
+    e.target.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.style.opacity = 0
+    // e.target.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.style.opacity = 0
+    e.target.previousElementSibling.style.transform = "rotate(90deg)"
+    e.target.previousElementSibling.style.opacity = 0
+    e.target.previousElementSibling.previousElementSibling.style.transform = "rotate(90deg)"
+    e.target.nextElementSibling.style.transform = "rotate(-90deg)"
+    e.target.nextElementSibling.style.opacity = 0
+    e.target.nextElementSibling.nextElementSibling.style.transform = "rotate(90deg)"
+  });
+})
+
+function showShape(){
+  shapePaths.forEach(shapePath => {
+    shapePath.style.opacity = 1
+  })
+}
