@@ -81,7 +81,8 @@ section#about{
     }
     p{
         line-height: 30px;
-        width: 56%;
+        width: 64%;
+        // font-family: $font-family-2;
         text-align: center;
         &:not(:last-child){
             margin-bottom: 40px;

@@ -1476,8 +1476,8 @@ main section#hero div.hero-text-content a {
   text-decoration: none;
   color: #FFFFFF;
   background-color: #FF5A6D;
-  font-weight: 500;
-  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   height: 40px;
   width: 200px;
@@ -1727,7 +1727,7 @@ main section#about h2 {
 
 main section#about p {
   line-height: 30px;
-  width: 56%;
+  width: 64%;
   text-align: center;
 }
 
@@ -2181,7 +2181,7 @@ main section#services .services-container article.service div.service__info h3 {
 
 main section#services .services-container article.service div.service__info p {
   font-size: 14px;
-  line-height: 17px;
+  line-height: 21px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -2523,7 +2523,7 @@ main section#projects .projects-container article.project div.project__info h3 {
 main section#projects .projects-container article.project div.project__info p {
   font-size: 14px;
   color: #FFFFFF;
-  line-height: 18px;
+  line-height: 21px;
 }
 
 main section#projects .projects-container article.project div.project__info a {
