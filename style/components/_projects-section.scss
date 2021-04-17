@@ -82,9 +82,6 @@ main{
     
     
         .projects-container{
-            // width: 100%;
-            // display: flex;
-            // flex-direction: row;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-rows: auto;
@@ -118,10 +115,7 @@ main{
             overflow: hidden;
             position: relative;
             transition: all .3s ease;
-            
-            // &:not(:last-child){
-                //     margin-right: 60px;
-                // }
+        
             @media only screen and (max-width: 1550px) {
                 width: 360px;
                 height: 244.8px;
