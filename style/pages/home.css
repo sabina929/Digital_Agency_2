@@ -2391,7 +2391,7 @@ main section#projects .projects-container {
 
 main section#projects .projects-container article.project {
   width: 300px;
-  height: auto;
+  height: 204px;
   -webkit-box-shadow: 1px 25px 25px -5px rgba(57, 19, 184, 0.05);
           box-shadow: 1px 25px 25px -5px rgba(57, 19, 184, 0.05);
   display: -webkit-box;
@@ -2416,42 +2416,49 @@ main section#projects .projects-container article.project {
 @media only screen and (max-width: 1550px) {
   main section#projects .projects-container article.project {
     width: 360px;
+    height: 244.8px;
   }
 }
 
 @media only screen and (max-width: 900px) {
   main section#projects .projects-container article.project {
     width: 300px;
+    height: 204px;
   }
 }
 
 @media only screen and (max-width: 800px) {
   main section#projects .projects-container article.project {
     width: 260px;
+    height: 176.8px;
   }
 }
 
 @media only screen and (max-width: 700px) {
   main section#projects .projects-container article.project {
     width: 360px;
+    height: 244.8px;
   }
 }
 
 @media only screen and (max-width: 450px) {
   main section#projects .projects-container article.project {
     width: 300px;
+    height: 204px;
   }
 }
 
 @media only screen and (max-width: 360px) {
   main section#projects .projects-container article.project {
     width: 260px;
+    height: 176.8px;
   }
 }
 
 @media only screen and (max-width: 320px) {
   main section#projects .projects-container article.project {
     width: 230px;
+    height: 156.4px;
   }
 }
 
@@ -2464,7 +2471,9 @@ main section#projects .projects-container article.project:hover {
 
 main section#projects .projects-container article.project img.project__image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 main section#projects .projects-container article.project:nth-child(1) div.project__info {
